@@ -10,16 +10,16 @@ web pages, and example databases. I will follow this order:
 5. Database Diagram
 
 ## 1.Site Map
-![alt text](https://github.com/jpolanco94/QuickScale/blob/master/Site%20Map%20GuitarApp%20(1).jpeg)
+![Site Map](https://github.com/jpolanco94/QuickScale/blob/master/Site%20Map%20GuitarApp%20(1).jpeg)
 The home page will be the most basic page on this web application
 ## 2. Wireframe Sketches and Features
-![alt text](https://github.com/jpolanco94/QuickScale/blob/master/Front%20Page.jpeg)
+![Home Page](https://github.com/jpolanco94/QuickScale/blob/master/Front%20Page.jpeg)
 The main page will have a menu bar that links to the other pages and a description of the web application and how to use it.
 The menu bar will have links to the actual scales and chords page, the account page, and an about page that will further explain the
 app. I have not yet decided that color scheme for the web app but it will be made to be easily changeable.
 
 The bulk of the work and information will be found on the scales and chords page.
-![alt text](https://github.com/jpolanco94/QuickScale/blob/master/ABluesScale.jpeg)
+![Scales Page](https://github.com/jpolanco94/QuickScale/blob/master/ABluesScale.jpeg)
 On the left is the option that allows a user to change the tunings of the strings. The user can either select from common tunings or
 choose what they want the strings to be individually.
 
@@ -32,15 +32,15 @@ Under the fretboard is an option for the user to change the number of frets and 
 what scale mode and root they want to display. Under this you will find the chords best associate with the chosen scale. The chord will display
 at the lowest position on the fretboard. The user can click through the chords to display the chords at higher positions.
 
-At the momentthe way the chords are displayed may be confusing. I was trying to display the chords in a smiliar fashion to the way my scales
+At the moment the way the chords are displayed may be confusing. I was trying to display the chords in a smiliar fashion to the way my scales
 are displayed but I may just display the chords in the traditional fashion shown below (or maybe both).
-![alt text](https://d1i98lg1qi3tmd.cloudfront.net/media/W1siZiIsIjIwMTcvMDgvMzEvNjNmcmMwNm5qOV8xNTFfQTdfY2hvcmQuZ2lmIl1d?sha=1853ac47634b5abc)
+![Chord Diagram](https://d1i98lg1qi3tmd.cloudfront.net/media/W1siZiIsIjIwMTcvMDgvMzEvNjNmcmMwNm5qOV8xNTFfQTdfY2hvcmQuZ2lmIl1d?sha=1853ac47634b5abc)
 
 Once feature I want to add to this page is the chance for the user to change from a light theme to a dark theme. I also want to put 
 different parts of this page into smaller windows that the user can move around to a position that helps them the most.
 
 # 3. Entity Relationship Diagram
-![alt text](https://github.com/jpolanco94/QuickScale/blob/master/Quick%20Scales%20ERD.jpeg)
+![ERD](https://github.com/jpolanco94/QuickScale/blob/master/Quick%20Scales%20ERD.jpeg)
 # 4. Database
 ```sql
 -This is a preliminary database for my 'QuickScales' app project I am working on.
@@ -146,4 +146,4 @@ VALUES
 	,(NEXT VALUE FOR UserIdSequence, 'rp123', 'roger', 'pochanclas', 'rp@fakeemail.com', 'qwerty1234', 'advanced')
 ```
 ## 5. Database Diagram
-![alt text](https://github.com/jpolanco94/QuickScale/blob/master/DataBase%20Diagram.JPG)
+![Database Diagram](https://github.com/jpolanco94/QuickScale/blob/master/DataBase%20Diagram.JPG)
