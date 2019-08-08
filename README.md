@@ -11,7 +11,9 @@ web pages, and example databases. I will follow this order:
 
 ## 1.Site Map
 ![Site Map](https://github.com/jpolanco94/QuickScale/blob/master/Home%20Page%20Quick%20Scale.jpeg)
-The home page will be the most basic page on this web application
+The home page will be the most basic page on this web application. The first option the users can pick is the chord and scale viewer and
+is explained below. The second option is to play a game meant to help guitarist memorize scales or fretboard notes. The user may also 
+decide to visit his account.
 ## 2. Wireframe Sketches and Features
 ![Home Page](https://github.com/jpolanco94/QuickScale/blob/master/Front%20Page.jpeg)
 The main page will have a menu bar that links to the other pages and a description of the web application and how to use it.
