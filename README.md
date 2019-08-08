@@ -10,15 +10,14 @@ web pages, and example databases. I will follow this order:
 5. Database Diagram
 
 ## 1.Site Map
-![Site Map](https://github.com/jpolanco94/QuickScale/blob/master/Home%20Page%20Quick%20Scale.jpeg)
-The home page will be the most basic page on this web application. The first option the users can pick is the chord and scale viewer and
-is explained below. The second option is to play a game meant to help guitarist memorize scales or fretboard notes. The user may also 
-decide to visit his account.
+![Site Map](https://github.com/jpolanco94/QuickScale/blob/master/Site%20Map%20GuitarApp%20(1).jpeg)
+This is a very basic Site Map for this web application.
 ## 2. Wireframe Sketches and Features
 ![Home Page](https://github.com/jpolanco94/QuickScale/blob/master/Front%20Page.jpeg)
-The main page will have a menu bar that links to the other pages and a description of the web application and how to use it.
-The menu bar will have links to the actual scales and chords page, the account page, and an about page that will further explain the
-app. I have not yet decided that color scheme for the web app but it will be made to be easily changeable.
+The home page will be the most basic page on this web application. The first option the users can pick is the chord and scale viewer and
+is explained below. The second option is to play a game meant to help guitarist memorize scales or fretboard notes. The user may also 
+decide to visit his account. I have not yet decided that color scheme for the web app but I know I want to use softer colors and also
+give the user the option to change up some colors.
 
 The bulk of the work and information will be found on the scales and chords page.
 ![Scales Page](https://github.com/jpolanco94/QuickScale/blob/master/ABluesScale.jpeg)
