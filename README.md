@@ -10,7 +10,7 @@ web pages, and example databases. I will follow this order:
 5. Database Diagram
 
 ## 1.Site Map
-![Site Map](https://github.com/jpolanco94/QuickScale/blob/master/Site%20Map%20GuitarApp%20(1).jpeg)
+![Site Map](https://github.com/jpolanco94/QuickScale/blob/master/Home%20Page%20Quick%20Scale.jpeg)
 The home page will be the most basic page on this web application
 ## 2. Wireframe Sketches and Features
 ![Home Page](https://github.com/jpolanco94/QuickScale/blob/master/Front%20Page.jpeg)
