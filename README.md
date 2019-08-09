@@ -21,6 +21,11 @@ give the user the option to change up some colors.
 
 The bulk of the work and information will be found on the scales and chords page.
 ![Scales Page](https://github.com/jpolanco94/QuickScale/blob/master/ABluesScale.jpeg)
+There is a lot going on in this sketch! I will explain each element but first want to clarify that the users of this app will have
+almost total control into how they want this page to be displayed. First, I want each element of this page to be its own seperate 
+window that users can move around to their liking. They will be able to open, close, and resize these windows as they please. I also want users to be able to change colors if they prefer. I prefer softer lighter colors, some may like harsher and darker colors. I may even have an option to change the fretboard desgin to a more traditional and realistic model. Now I will explain the sperate elements
+in the next paragraphs.
+
 On the left is the option that allows a user to change the tunings of the strings. The user can either select from common tunings or
 choose what they want the strings to be individually.
 
@@ -39,8 +44,6 @@ shown below (or maybe both).
 
 ![Chord Diagram](https://d1i98lg1qi3tmd.cloudfront.net/media/W1siZiIsIjIwMTcvMDgvMzEvNjNmcmMwNm5qOV8xNTFfQTdfY2hvcmQuZ2lmIl1d?sha=1853ac47634b5abc)
 
-One feature I want to add to this page is the chance for the user to change from a light theme to a dark theme. I also want to put 
-different parts of this page into smaller windows that the user can move around to a position that helps them the most.
 
 # 3. Entity Relationship Diagram
 ![ERD](https://github.com/jpolanco94/QuickScale/blob/master/Quick%20Scales%20ERD.jpeg)
