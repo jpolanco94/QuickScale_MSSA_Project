@@ -34,10 +34,12 @@ what scale mode and root they want to display. Under this you will find the chor
 at the lowest position on the fretboard. The user can click through the chords to display the chords at higher positions.
 
 At the moment the way the chords are displayed may be confusing. I was trying to display the chords in a smiliar fashion to the way my scales
-are displayed but I may just display the chords in the traditional fashion shown below (or maybe both).
+are displayed but I may just display the chords in the traditional fashion 
+shown below (or maybe both).
+
 ![Chord Diagram](https://d1i98lg1qi3tmd.cloudfront.net/media/W1siZiIsIjIwMTcvMDgvMzEvNjNmcmMwNm5qOV8xNTFfQTdfY2hvcmQuZ2lmIl1d?sha=1853ac47634b5abc)
 
-Once feature I want to add to this page is the chance for the user to change from a light theme to a dark theme. I also want to put 
+One feature I want to add to this page is the chance for the user to change from a light theme to a dark theme. I also want to put 
 different parts of this page into smaller windows that the user can move around to a position that helps them the most.
 
 # 3. Entity Relationship Diagram
