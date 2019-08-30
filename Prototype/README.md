@@ -7,3 +7,4 @@ in terms of choosing font size, color, and what to do with the blurb in the midd
 
 ### Scales and Chords Page.
 ![Gif](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/UsingApp.gif)
+The Scales and Chords page still needs a lot of work but I was able to implement on of the features I really wanted. That is the ability for the page to be customizable to the user. I still need to figure out a way to display the fretboard in a way that will be easy to change the number of frets and strings shown.
