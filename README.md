@@ -1,8 +1,9 @@
 # QuickScale :guitar:
 ## Table of Contents
-* [1.Concept and Top Level User Requirements](#concept-and-top-level-user-requirements)
-* [Requirements](#requirements)
-* [Solution Design](#solution-design)
+* [1. Concept and Top Level User Requirements](#concept-and-top-level-user-requirements)
+* [2. Requirements](#requirements)
+* [3. Solution Design](#solution-design)
+* [4. Database Design](#4.database-design)
 
 
 ## Concept and Top Level User Requirements
@@ -30,10 +31,14 @@ Above is a preliminary requirements traceability matrix. As I continue to add to
 ![UseCase](https://github.com/jpolanco94/QuickScale/blob/master/UseCase.jpeg)
 One of the features of this app is letting users create an account. I will still like users without an account to have full access to the app. This is why there are three users in this use case diagram. The only features a user with an account will have is a way to track which scales they viewed last and which scales are viewed often. The administrator will have access to a database that contains all users' login information.
 
+[Top](#table-of-contents)
+
 ## 4.Database Design
 ![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Quick%20Scales%20ERD.jpeg)
 ![ERD2](https://github.com/jpolanco94/QuickScale/blob/master/DataBase%20Diagram.JPG)
 One of the bigger issues I face in creating this app is the way in which the scales and chords are displayed. Once I can figure that out the ERD will change almost entirely. More information here (link).
+
+[Top](#table-of-contents)
 
 ## 5.Wireframe Details
 ### Front Page
@@ -42,6 +47,8 @@ The home page will be the most basic page on this web application. The first opt
 is explained below. The second option is to play a game meant to help guitarist memorize scales or fretboard notes. The user may also 
 decide to visit his account. I have not yet decided that color scheme for the web app but I know I want to use softer colors and also
 give the user the option to change up some colors.
+
+[Top](#table-of-contents)
 
 ### Scales and Chords Page
 ![Scales Page](https://github.com/jpolanco94/QuickScale/blob/master/ABluesScale.jpeg)
@@ -68,6 +75,8 @@ shown below (or maybe both).
 
 ![Chord Diagram](https://d1i98lg1qi3tmd.cloudfront.net/media/W1siZiIsIjIwMTcvMDgvMzEvNjNmcmMwNm5qOV8xNTFfQTdfY2hvcmQuZ2lmIl1d?sha=1853ac47634b5abc)
 
+[Top](#table-of-contents)
+
 ## 6.Progress, Goals, and Challenges
 Below is what I have been able to accomplish on Visual Studios on the front end.
 ### Front Page
@@ -85,6 +94,8 @@ The Scales and Chords page still needs a lot of work but I was able to implement
 
 ### Challenges
 The biggest challenge I face in completing this app is figuring out a way to display a fretboard that can be changed by the user depeding what what scale they want to see and how many strings and frets they want to view. My idea right now is to have a table that that is shaped like a fretboard that will have the strings as columns and frets as rows. This table will change in size depending on what the user chooses. Certain cells will change color depending on the the root note and the mode of the scale. 
+
+[Top](#table-of-contents)
 
 ## 7. Code
 ### SQL
@@ -193,6 +204,8 @@ VALUES
 	,(NEXT VALUE FOR UserIdSequence, 'rp123', 'roger', 'pochanclas', 'rp@fakeemail.com', 'qwerty1234', 'advanced')
 ```
 
+[Top](#table-of-contents)
+
 ### HTML
 ```html
 <!DOCTYPE html>
@@ -279,6 +292,9 @@ VALUES
 </body>
 </html>
 ```
+
+[Top](#table-of-contents)
+
 ### CSS
 ```css
 #drag-1, #drag-2 {
@@ -346,6 +362,8 @@ VALUES
     background-color: gold;
 }
 ```
+[Top](#table-of-contents)
+
 ### JavaScript
 ```javascript
 // target elements with the "draggable" class
@@ -405,6 +423,8 @@ function myFunction() {
     }
 }
 ```
+
+[Top](#table-of-contents)
 
 
 
