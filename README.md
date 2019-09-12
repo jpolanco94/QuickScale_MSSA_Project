@@ -5,7 +5,7 @@
 * [Solution Design](#solution-design)
 * [Database Design](#database-design)
 * [Wireframe Details](#wireframe-details)
-* [Progress, Goals, and Challenges](#progress,-goals,-and-challenges]
+* [Progress, Goals, and Challenges](#progress,-goals,-and-challenges)
 * [Code](#code)
 
 
@@ -39,7 +39,7 @@ One of the features of this app is letting users create an account. I will still
 ## Database Design
 ![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Quick%20Scales%20ERD.jpeg)
 ![ERD2](https://github.com/jpolanco94/QuickScale/blob/master/DataBase%20Diagram.JPG)
-One of the bigger issues I face in creating this app is the way in which the scales and chords are displayed. Once I can figure that out the ERD will change almost entirely. More information here (link).
+One of the bigger issues I face in creating this app is the way in which the scales and chords are displayed. Once I can figure that out the ERD will change almost entirely. More information [here](#challenges)
 
 [Top](#table-of-contents)
 
