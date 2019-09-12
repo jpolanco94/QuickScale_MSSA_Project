@@ -100,9 +100,8 @@ The biggest challenge I face in completing this app is figuring out a way to dis
 
 [Top](#table-of-contents)
 
-## 7. Code
+## Code
 ### SQL
-# 4. Database
 ```sql
 -This is a preliminary database for my 'QuickScales' app project I am working on.
 --I made this only as a reference for myself in the future and to get
