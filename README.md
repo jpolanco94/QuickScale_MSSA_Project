@@ -3,7 +3,7 @@
 * [1. Concept and Top Level User Requirements](#concept-and-top-level-user-requirements)
 * [2. Requirements](#requirements)
 * [3. Solution Design](#solution-design)
-* [4. Database Design](#4.database-design)
+* [4. Database Design](#database-design)
 
 
 ## Concept and Top Level User Requirements
@@ -27,13 +27,13 @@ Above is a preliminary requirements traceability matrix. As I continue to add to
 
 [Top](#table-of-contents)
 
-## Solution Design
+## 3. Solution Design
 ![UseCase](https://github.com/jpolanco94/QuickScale/blob/master/UseCase.jpeg)
 One of the features of this app is letting users create an account. I will still like users without an account to have full access to the app. This is why there are three users in this use case diagram. The only features a user with an account will have is a way to track which scales they viewed last and which scales are viewed often. The administrator will have access to a database that contains all users' login information.
 
 [Top](#table-of-contents)
 
-## 4.Database Design
+## 4. Database Design
 ![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Quick%20Scales%20ERD.jpeg)
 ![ERD2](https://github.com/jpolanco94/QuickScale/blob/master/DataBase%20Diagram.JPG)
 One of the bigger issues I face in creating this app is the way in which the scales and chords are displayed. Once I can figure that out the ERD will change almost entirely. More information here (link).
