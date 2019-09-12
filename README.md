@@ -1,6 +1,6 @@
 # QuickScale :guitar:
 ## Table of Contents
-* [1.Concept and Top Level User Requirements](#concept-and-top-level-user-requirements)
+* [1.Concept and Top Level User Requirements](#1.concept-and-top-level-user-requirements)
 
 
 ## 1.Concept and Top Level User Requirements
