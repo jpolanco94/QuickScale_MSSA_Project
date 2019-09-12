@@ -1,0 +1,86 @@
+﻿@model QuickScaleProtoType.Models.Scale;
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/ScalesPage.css"/>
+    <script src="~/js/ScalesPage.js"></script>
+    <title>Scale Page</title>
+</head>
+<body>
+    <div id="drag-1" class="draggable">
+        <div style="display:table-row">Choose Mode and Key</div>
+        <div style="display:table-cell" class="dropdown">
+            <button class="dropbtn">Key</button>
+            <div class="dropdown-content">
+                <a href="#">A</a>
+                <a href="#">A#/Bb</a>
+                <a href="#">B </a>
+                <a href="#">C</a>
+                <a href="#">C#/Db</a>
+                <a href="#">D</a>
+                <a href="#">D#/Eb</a>
+                <a href="#">E</a>
+                <a href="#">F</a>
+                <a href="#">F#/Gb</a>
+                <a href="#">G</a>
+                <a href="#">G#/Ab</a>
+            </div>
+        </div>
+        <div style="display:table-cell" class="dropdown">
+            <button class="dropbtn">Mode</button>
+            <div class="dropdown-content">
+                <a href="#">Major</a>
+                <a href="#">Natural Minor</a>
+                <a href="#">Harmonic Minor</a>
+                <a href="#">Blues</a>
+                <a href="#">Phrygian</a>
+                <a href="#">Mixolydian</a>
+                <a href="#">Lydian</a>
+                <a href="#">Aeolian</a>
+                <a href="#">Locrian</a>
+                <a href="#">Ionian</a>
+                <a href="#">Dorian</a>
+            </div>
+        </div>
+        <button type="button" class="gobutton">Go!</button>
+    </div>
+    <div id="drag-1" class="draggable">
+        <div style="display:table-row">Choose Fret and String Number</div>
+        <div style="display:table-cell" class="dropdown">
+            <button class="dropbtn">String #</button>
+            <div class="dropdown-content">
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+            </div>
+        </div>
+        <div style="display:table-cell" class="dropdown">
+            <button class="dropbtn">Fret#</button>
+            <div class="dropdown-content">
+                <a href="#">12</a>
+                <a href="#">13</a>
+                <a href="#">14</a>
+                <a href="#">15</a>
+                <a href="#">16</a>
+                <a href="#">17</a>
+                <a href="#">18</a>
+                <a href="#">19</a>
+                <a href="#">20</a>
+                <a href="#">21</a>
+                <a href="#">22</a>
+                <a href="#">23</a>
+                <a href="#">24</a>
+
+            </div>
+        </div>
+        <button type="button" class="gobutton">Go!</button>
+    </div>
+    <a asp-action="Index">Front Page</a>
+</body>
+</html>

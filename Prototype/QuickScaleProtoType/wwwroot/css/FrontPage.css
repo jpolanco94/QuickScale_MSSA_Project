@@ -1,0 +1,36 @@
+﻿body {
+    background-image: url(../Images/BackGround.jpg)
+}
+
+table, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+p1 {
+    font-style: initial;
+    font-size: 40px;
+    font-family: Georgia;
+    color: indianred;
+}
+
+table, th {
+    color: indianred;
+    font-size: 20px;
+    width: 40%;
+    border-style: groove;
+    border-color: indianred;
+    font-family: Georgia;
+    text-align: center;
+}
+
+div2 {
+    background-color: turquoise;
+    height: 400px;
+    width: 400px;
+    border: 12px indianred;
+    color: indianred;
+    margin: initial;
+}

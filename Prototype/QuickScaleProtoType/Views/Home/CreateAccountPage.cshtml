@@ -1,0 +1,30 @@
+﻿@model QuickScaleProtoType.Models.User
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content=" = " width="device-width" />
+    <title>CreateAccountPage</title>
+    <link rel="stylesheet" href="~/css/FrontPage.css" />
+</head>
+<body>
+
+    <form asp-action="CreateAccountPage" method="post">
+        <p>
+            <label asp-for="Username">Your username:</label>
+            <input asp-for="Username" />
+        </p>
+        <p>
+            <label asp-for="Password">Your password:</label>
+            <input asp-for="Password" />
+        </p>
+        <p>
+            <label asp-for="Email">Your email:</label>
+            <input asp-for="Email" />
+        </p>
+        <button type="submit">Create Account</button>
+    </form>
+    <a asp-action="Index">Front Page</a>
+</body>
+</html>
