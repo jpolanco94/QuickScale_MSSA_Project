@@ -5,7 +5,7 @@
 * [Solution Design](#solution-design)
 * [Database Design](#database-design)
 * [Wireframe Details](#wireframe-details)
-* [Progress, Goals, and Challenges](#progress,-goals,-and-challenges)
+* [Progress and Challenges](#progress-and-challenges)
 * [Code](#code)
 
 
@@ -80,7 +80,7 @@ shown below (or maybe both).
 
 [Top](#table-of-contents)
 
-## Progress, Goals, and Challenges
+## Progress and Challenges
 Below is what I have been able to accomplish on Visual Studios on the front end.
 ### Front Page
 
