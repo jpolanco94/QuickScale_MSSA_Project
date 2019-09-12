@@ -1,9 +1,9 @@
 # QuickScale :guitar:
 ## Table of Contents
-* [1.Concept and Top Level User Requirements](#1.concept-and-top-level-user-requirements)
+* [1.Concept and Top Level User Requirements](#concept-and-top-level-user-requirements)
 
 
-## 1.Concept and Top Level User Requirements
+## Concept and Top Level User Requirements
 QuickScale is a web application that serves as an easily accessible, readable, and adjustable quick reference guide of scales and chords for guitarist of all levels. The following are the fundamental requirements this application must fulfill:
 * The web app should be able to clearly present scales and chords in a way that makes sense.
 * The web app should let users be able to select what scales and chords that want to view.
