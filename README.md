@@ -18,6 +18,7 @@ QuickScale is a web application that serves as an easily accessible, readable, a
 <br/>
 
 ## 2.Requirements
-![RTM](https://github.com/jpolanco94/QuickScale/blob/master/RTM-converted%20(1).pdf)
+![RTM](https://github.com/jpolanco94/QuickScale/blob/master/RTM%20(1).jpg)
+
 
 
