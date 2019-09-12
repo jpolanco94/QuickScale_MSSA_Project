@@ -1,6 +1,8 @@
 # QuickScale :guitar:
 ## Table of Contents
 * [1.Concept and Top Level User Requirements](#concept-and-top-level-user-requirements)
+* [Requirements](#requirements)
+* [Solution Design](#solution-design)
 
 
 ## Concept and Top Level User Requirements
@@ -18,11 +20,13 @@ QuickScale is a web application that serves as an easily accessible, readable, a
 
 [Top](#table-of-contents)
 
-## 2.Requirements
+## Requirements
 ![RTM](https://github.com/jpolanco94/QuickScale/blob/master/RTM%20(1).jpg)
 Above is a preliminary requirements traceability matrix. As I continue to add to the prototype of the web application the software and systems requirements will grow.
 
-## 3.Solution Design
+[Top](#table-of-contents)
+
+## Solution Design
 ![UseCase](https://github.com/jpolanco94/QuickScale/blob/master/UseCase.jpeg)
 One of the features of this app is letting users create an account. I will still like users without an account to have full access to the app. This is why there are three users in this use case diagram. The only features a user with an account will have is a way to track which scales they viewed last and which scales are viewed often. The administrator will have access to a database that contains all users' login information.
 
