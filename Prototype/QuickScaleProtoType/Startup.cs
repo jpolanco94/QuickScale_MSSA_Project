@@ -9,31 +9,24 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using QuickScaleProtoType.Models;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace QuickScaleProtoType
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
+        public Startup(IConfiguration configuration) => Configuration = configuration;
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
-
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+                Configuration["Data:QuickScaleProtoType:ConnectionString"]));
+            services.AddTransient<IUserRepository, EFUserRepository>();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,6 +47,7 @@ namespace QuickScaleProtoType
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseMvcWithDefaultRoute();
+            SeedData.EnsurePopulated(app);
             //app.UseMvc(routes =>
             //{
             //    routes.MapRoute(
