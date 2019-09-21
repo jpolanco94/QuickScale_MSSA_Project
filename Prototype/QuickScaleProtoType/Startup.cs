@@ -23,15 +23,16 @@ namespace QuickScaleProtoType
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
                 Configuration["Data:QuickScaleProtoType:ConnectionString"]));
-            services.AddTransient<IUserRepository, EFUserRepository>();
-            services.AddMvc();
+            services.AddTransient<IQuickScaleRepository, EFQuickScaleRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseStatusCodePages();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -47,14 +48,25 @@ namespace QuickScaleProtoType
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseMvcWithDefaultRoute();
-            SeedData.EnsurePopulated(app);
             //app.UseMvc(routes =>
             //{
             //    routes.MapRoute(
             //        name: "default",
             //        template: "{controller=Home}/{action=Index}/{id?}");
             //});
+            UpdateDatabase(app);
+        }
+        private static void UpdateDatabase(IApplicationBuilder app)
+        {
+            using (var serviceScope = app.ApplicationServices
+                .GetRequiredService<IServiceScopeFactory>()
+                .CreateScope())
+            {
+                using (var context = serviceScope.ServiceProvider.GetService<ApplicationDbContext>())
+                {
+                    context.Database.Migrate();
+                }
+            }
         }
     }
-    
 }

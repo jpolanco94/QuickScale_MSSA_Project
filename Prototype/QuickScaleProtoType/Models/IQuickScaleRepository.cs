@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 
 namespace QuickScaleProtoType.Models
 {
-    public class IUserRepository
+    public interface IQuickScaleRepository
     {
         IQueryable<User> Users { get; }
+        IQueryable<SavedFretBoard> SavedFretBoards { get; }
+        IQueryable<Scale> Scales { get; }
     }
 }
