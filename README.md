@@ -37,7 +37,7 @@ One of the features of this app is letting users create an account. I will still
 [Top](#table-of-contents)
 
 ## Database Design
-![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Sources/Quick%20Scales%20ERD.jpeg)
+![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Sources/DatabaseDiagram.JPG)
 
 <br/>
 
