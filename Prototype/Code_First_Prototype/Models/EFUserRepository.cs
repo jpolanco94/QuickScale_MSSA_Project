@@ -5,15 +5,14 @@ using System.Threading.Tasks;
 
 namespace QuickScaleProtoType.Models
 {
-    public class EFQuickScaleRepository : IUserRepository, IScaleRepository, 
+    public class EFUserRepository : IUserRepository
     {
         private ApplicationDbContext context;
-        public EFQuickScaleRepository(ApplicationDbContext ctx)
+        public EFUserRepository(ApplicationDbContext ctx)
         {
             context = ctx;
         }
         public IQueryable<User> Users => context.Users;
-        public IQueryable<SavedFretBoard> SavedFretBoards => context.SavedFretBoards;
-        public IQueryable<Scale> Scales => context.Scales;    
+ 
     }
 }

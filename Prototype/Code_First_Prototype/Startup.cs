@@ -26,7 +26,10 @@ namespace QuickScaleProtoType
             services.AddMvc();
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
                 Configuration["Data:QuickScaleProtoType:ConnectionString"]));
-            services.AddTransient<IQuickScaleRepository, EFQuickScaleRepository>();
+            //the AddTransient() method is what I would change if I wanted to use a fake repository or use my 
+            services.AddTransient<IUserRepository, EFUserRepository>();
+            services.AddTransient<IScaleRepository, EFScaleRepository>();
+            services.AddTransient<ISavedFretBoardRepository, EFSavedFretBoardRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -23,8 +23,10 @@ namespace QuickScaleProtoType.Models
         public string EigthStringNote { get; set; }
         //I am still not sure if Entity Framework implicitly makes foreign keys so I
         //told it to make one
+        public int UserID { get; set; }
         [ForeignKey("UserID")]
         public User User { get; set; }
+        public int ScaleID { get; set; }
         [ForeignKey("ScaleID")]
         public Scale Scale { get; set; }
     }
