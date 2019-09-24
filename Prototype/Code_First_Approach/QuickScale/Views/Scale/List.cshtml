@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Scale>
+
+@foreach (var x in Model)
+{
+    <div>
+        <h3>@x.Mode</h3>
+        <h3>@x.RootNote</h3>
+    </div>
+}

@@ -23,13 +23,13 @@ namespace QuickScaleProtoType
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
                 Configuration["Data:QuickScaleProtoType:ConnectionString"]));
             //the AddTransient() method is what I would change if I wanted to use a fake repository or use my 
             services.AddTransient<IUserRepository, EFUserRepository>();
             services.AddTransient<IScaleRepository, EFScaleRepository>();
             services.AddTransient<ISavedFretBoardRepository, EFSavedFretBoardRepository>();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

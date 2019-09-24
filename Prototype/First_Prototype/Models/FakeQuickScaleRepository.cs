@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace QuickScaleProtoType.Models
 {
-    public class FakeQuickScaleRepository : IQuickScaleRepository
+    public class FakeQuickScaleRepository : IUserRepository
     {
         public IQueryable<User> Users => new List<User>
         {

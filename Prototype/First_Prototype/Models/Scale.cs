@@ -9,7 +9,7 @@ namespace QuickScaleProtoType.Models
 
     public class Scale
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ScaleId { get; set; }
         public string Key { get; set; }
          public string Mode { get; set; }

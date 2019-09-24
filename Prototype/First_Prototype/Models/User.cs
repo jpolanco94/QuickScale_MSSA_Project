@@ -9,7 +9,7 @@ namespace QuickScaleProtoType.Models
 {
     public class User
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int UserID { get; set; }
         //Just some preliminary data annotations. More will be added to the rest of my columns
         [Required (ErrorMessage ="A username is required")]

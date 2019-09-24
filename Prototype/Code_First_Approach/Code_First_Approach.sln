@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickScale", "QuickScale\QuickScale.csproj", "{7A0D5622-59C8-4812-9BEA-F0A59B8BA6FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A0D5622-59C8-4812-9BEA-F0A59B8BA6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0D5622-59C8-4812-9BEA-F0A59B8BA6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0D5622-59C8-4812-9BEA-F0A59B8BA6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A0D5622-59C8-4812-9BEA-F0A59B8BA6FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37212C86-25EA-48E8-8C30-83322D47FFC0}
+	EndGlobalSection
+EndGlobal

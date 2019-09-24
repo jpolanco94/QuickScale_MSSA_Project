@@ -5,28 +5,27 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace QuickScaleProtoType.Models
+namespace QuickScale.Models
 {
-    public class SavedFretBoard
+    public class SavedFretboard
     {
         [Key]
-        public int FretboardID { get; set; }
-        public int NumberOfFrets { get; set; }
+        public int SavedFretboardID { get; set; }
         public int NumberOfStrings { get; set; }
+        public int NumberOfFrets { get; set; }
         public string FirstStringNote { get; set; }
         public string SecondStringNote { get; set; }
         public string ThirdStringNote { get; set; }
         public string FourthStringNote { get; set; }
         public string FifthStringNote { get; set; }
         public string SixthStringNote { get; set; }
-        public string SeventhStringNote { get; set; }
-        public string EigthStringNote { get; set; }
-        //I am still not sure if Entity Framework implicitly makes foreign keys so I
-        //told it to make one
-        public int UserID { get; set; }
+        public string SeventhtringNote { get; set; }
+        public string EighthStringNote { get; set; }
+        public string NinthStringNote { get; set; }
+        public string TenthStringNote { get; set; }
+
         [ForeignKey("UserID")]
         public User User { get; set; }
-        public int ScaleID { get; set; }
         [ForeignKey("ScaleID")]
         public Scale Scale { get; set; }
     }
