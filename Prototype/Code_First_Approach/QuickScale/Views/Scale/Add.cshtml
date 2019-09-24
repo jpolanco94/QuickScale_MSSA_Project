@@ -1,0 +1,45 @@
+﻿@model QuickScale.Models.Scale
+<!DOCTYPE html>
+
+<html>
+<body>
+    <div>
+        <form asp-action="Add" method="post">
+            <div>
+                Select a root note.
+                <select asp-for="RootNote">
+                    <option value="A">A</option>
+                    <option value="A#/Bb">A#/Bb</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="C#/Db">C#/Db</option>
+                    <option value="D">D</option>
+                    <option value="D#/Eb">D#/Eb</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="F#/Gb">F#/Gb</option>
+                    <option value="G">G</option>
+                    <option value="G#/Ab">G#/Ab</option>
+                </select>
+            </div>
+            <div>
+                Select a root note.
+                <select asp-for="Mode">
+                    <option value="Lydian">Lydian</option>
+                    <option value="Mixolydian">Mixolydian</option>
+                    <option value="Aeolian">Aeolian</option>
+                    <option value="Phrygian">Phrygian</option>
+                    <option value="Ionian">Ionian</option>
+                    <option value="Dorian">Dorian</option>
+                    <option value="Locrian">Locrian</option>
+                    <option value="Blues">Blues</option>
+                </select>
+            </div>
+            <button type="submit">Submit Scale</button>
+        </form>
+    </div>
+        <a class="btn btn-primary" asp-action="Index" asp-controller="Home">Go back</a>
+     
+
+</body>
+</html>

@@ -1,9 +1,24 @@
 ﻿@model IEnumerable<Scale>
 
-@foreach (var x in Model)
-{
-    <div>
-        <h3>@x.Mode</h3>
-        <h3>@x.RootNote</h3>
-    </div>
-}
+<!DOCTYPE html>
+
+<html>
+<body>
+    <table>
+        <thead>
+            <tr><td>Root Note</td><td>Mode</td><td>Id</td></tr>
+        </thead>
+        <tbody>
+            @foreach (var x in Model)
+            {
+                <tr>
+                    <td>@x.RootNote</td>
+                    <td>@x.Mode</td>
+                    <td>@x.ScaleID</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a class="btn btn-primary" asp-action="Index" asp-controller="Home">Home Page</a>
+</body>
+</html>

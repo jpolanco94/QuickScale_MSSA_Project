@@ -28,6 +28,8 @@ namespace QuickScale
             services.AddTransient<ISavedFretboardRepository, EFSavedFretboardRepository>();
             services.AddTransient<IScaleRepository, EFScaleRepository>();
             services.AddMvc();
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,9 +38,12 @@ namespace QuickScale
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            app.UseSession();
             app.UseMvc(routes =>
             {
-
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
             SeedData.EnsurePopulated(app);
         }
