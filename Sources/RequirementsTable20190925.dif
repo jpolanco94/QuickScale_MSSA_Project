@@ -1,0 +1,304 @@
+TABLE
+0,1
+"EXCEL"
+VECTORS
+0,29
+""
+TUPLES
+0,4
+""
+DATA
+0,0
+""
+-1,0
+BOT
+1,0
+"Requirement Level"
+1,0
+"Requirement Category"
+1,0
+"Requirement ID"
+1,0
+"Requirement Description"
+-1,0
+BOT
+1,0
+"User (1.x.y)"
+1,0
+"Accessibility (1.1.y)"
+1,0
+"1.1.1"
+1,0
+"Users shall be able to access the web application"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"1.1.2"
+1,0
+"Users with or without an account shall be able to navigate pages"
+-1,0
+BOT
+1,0
+""
+1,0
+"Scale Fluidity (1.2.y)"
+1,0
+"1.2.1"
+1,0
+"Users with or without an accountshall be able to select what scale they want to view based on root note and mode"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"1.2.2"
+1,0
+"Users with our without an account shall be able to change the number of frets and strings on the animated fretboard and the notes of the strings"
+-1,0
+BOT
+1,0
+""
+1,0
+"Account Creation and Features (1.3.y)"
+1,0
+"1.3.1"
+1,0
+"Users shall be able to create an account"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"1.3.2"
+1,0
+"Users shall be able to access an account page"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"1.3.4"
+1,0
+"Users shall be able to change the password to their account"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"1.3.5"
+1,0
+"Users shall be able to save animated fretboard designs for easy viewing"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"1.3.6"
+1,0
+"Users without an account shall not be able to save an animated fretboard"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"1.3.7"
+1,0
+"Users shall be able to delete an account."
+-1,0
+BOT
+1,0
+""
+1,0
+"Administrator Controls (1.4.y)"
+1,0
+"1.4.1"
+1,0
+"Administrators shall be able to access administrator accounts from the main login page "
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"1.4.2"
+1,0
+"Administrators shall be able to view a list of users and their encrypted passwords"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"1.4.3"
+1,0
+"Administrators shall be able to delete any accounts"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"1.4.4"
+1,0
+"Administrators shall not be able to access pages available to regular users from the administration accounts"
+-1,0
+BOT
+1,0
+"Sytem (2.x.y)"
+1,0
+"Security (2.1.y)"
+1,0
+"2.1.1"
+1,0
+"The system shall save user passwords using encryption"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"2.1.2"
+1,0
+"The system shall not let anyone log in to the web application without a proper username and password"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"2.1.3"
+1,0
+"The system shall not let any users have access to administrator controls"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"2.1.4"
+1,0
+"The system shall not let administrator accounts be made from the web application"
+-1,0
+BOT
+1,0
+""
+1,0
+"Database (2.2.y)"
+1,0
+"2.2.1"
+1,0
+"A UserID shall be assigned to a user once they create their account"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"2.2.2"
+1,0
+"A ScaleID shall be assigned to a scale once it has been choosen by a user"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"2.2.3"
+1,0
+"A SavedFreboardID shall be assisnged once a user decides to save those fretboard settings"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"2.2.4"
+1,0
+"The database server shall be able to hold over 1,000 accounts, 5,000 scales, and 10,000 saved fretboards"
+-1,0
+BOT
+1,0
+"Software (3.x.y)"
+1,0
+"Code (3.1.y)"
+1,0
+"3.1.1"
+1,0
+"The web application shall be written using C#, HTML, and CSS"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"3.1.2"
+1,0
+"The web application shall be written using the MVC framework"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"3.1.3"
+1,0
+"The web application shall use Dependency Injection to eliminate high coupling"
+-1,0
+BOT
+1,0
+""
+1,0
+"Code Function (3.2.y)"
+1,0
+"3.2.1"
+1,0
+"The web application shall display the correct scales based on the users' choice of root note and mode"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"3.2.2"
+1,0
+"The web application shall display the proper number of strings and frets according to the users' choice"
+-1,0
+BOT
+1,0
+""
+1,0
+""
+1,0
+"3.2.3"
+1,0
+"The web application shall change the notes of the scale on the animated fretboard depending on what notes for each string the users choose"
+-1,0
+EOD
