@@ -1,7 +1,7 @@
 # QuickScale :guitar:
 ## Table of Contents
 * [Concept and Top Level User Requirements](#concept-and-top-level-user-requirements)
-* [Requirements](#requirements)
+* [Requirements](#requirements) (Currently Working On)
 * [Use Case Diagram](#use-case-diagram)
 * [Database Design](#database-design)
 * [Wireframe Details](#wireframe-details)
@@ -24,9 +24,9 @@ QuickScale is a web application that serves as an easily accessible, readable, a
 
 [Top](#table-of-contents)
 
-## Requirements
+## Requirements (Currently working on)
 ![RTM](https://github.com/jpolanco94/QuickScale/blob/master/Sources/RequirementsTable20190925.jpg)
-Above is a preliminary requirements traceability matrix. As I continue to add to the prototype of the web application the software and systems requirements will grow.
+Above is my requirements table. This table is very basic and missing many requirements that I will add on in the future but it has hleped me better understand the test driven development apporach to creating applications. In the future I will add a test cases table and finally a requirements traceability matrix.
 
 [Top](#table-of-contents)
 
