@@ -25,7 +25,7 @@ QuickScale is a web application that serves as an easily accessible, readable, a
 [Top](#table-of-contents)
 
 ## Requirements
-![RTM](https://github.com/jpolanco94/QuickScale/blob/master/Sources/RTM%20(1).jpg)
+![RTM](https://github.com/jpolanco94/QuickScale/blob/master/Sources/RequirementsTable20190925.jpg)
 Above is a preliminary requirements traceability matrix. As I continue to add to the prototype of the web application the software and systems requirements will grow.
 
 [Top](#table-of-contents)
