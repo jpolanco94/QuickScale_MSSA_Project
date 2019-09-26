@@ -25,7 +25,7 @@ QuickScale is a web application that serves as an easily accessible, readable, a
 [Top](#table-of-contents)
 
 ## Requirements (Currently working on)
-![Requirements](https://github.com/jpolanco94/QuickScale/blob/master/Sources/RequirementsTable20190925.jpg)
+![Requirements](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/RequirementsTable20190925.jpg)
 Above is my requirements table. This table is very basic and missing many requirements that I will add on in the future but it has hleped me better understand the test driven development apporach to creating applications. 
 
 ![TestCases](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/TestCase20190925.jpg)
@@ -37,13 +37,13 @@ This requirements traceability matrix provides a better visual representation of
 [Top](#table-of-contents)
 
 ## Use Case Diagram
-![UseCase](https://github.com/jpolanco94/QuickScale/blob/master/Sources/UseCase.jpeg)
+![UseCase](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/UseCase.jpeg)
 One of the features of this app is letting users create an account. I will still like users without an account to have full access to the app. This is why there are three users in this use case diagram. The only features a user with an account will have is a way to track which scales they viewed last and which scales are viewed often. The administrator will have access to a database that contains all users' login information.
 
 [Top](#table-of-contents)
 
 ## Database Design
-![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Sources/DatabaseDiagram.JPG)
+![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/DatabaseDiagram.JPG)
 
 <br/>
 
@@ -53,7 +53,7 @@ One of the bigger issues I face in creating this app is the way in which the sca
 
 ## Wireframe Details
 ### Front Page
-![Home Page](https://github.com/jpolanco94/QuickScale/blob/master/Sources/Home%20Page%20Quick%20Scale.jpeg)
+![Home Page](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/Documentation/FrontPage.JPG)
 The home page will be the most basic page on this web application. The first option the users can pick is the chord and scale viewer and
 is explained below. The second option is to play a game meant to help guitarist memorize scales or fretboard notes. The user may also 
 decide to visit his account. I have not yet decided that color scheme for the web app but I know I want to use softer colors and also
@@ -62,7 +62,7 @@ give the user the option to change up some colors.
 [Top](#table-of-contents)
 
 ### Scales and Chords Page
-![Scales Page](https://github.com/jpolanco94/QuickScale/blob/master/Sources/ABluesScale.jpeg)
+![Scales Page]()
 There is a lot going on in this sketch! I will explain each element but first want to clarify that the users of this app will have
 almost total control into how they want this page to be displayed. First, I want each element of this page to be its own seperate 
 window that users can move around to their liking. They will be able to open, close, and resize these windows as they please. I also want users to be able to change colors if they prefer. I prefer softer lighter colors, some may like harsher and darker colors. I may even have an option to change the fretboard desgin to a more traditional and realistic model. Now I will explain the sperate elements
