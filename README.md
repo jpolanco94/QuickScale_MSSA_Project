@@ -15,6 +15,7 @@ QuickScale is a web application that serves as an easily accessible, readable, a
 * The web app should let users be able to select what scales and chords that want to view.
 * The web app should be easy to navigate.
 * The web app should allow for some level of customizazation.
+One of the bigger issues I face in creating this app is the way in which the scales and chords are displayed. Once I can figure that out the ERD will change almost entirely. More information [here](#challenges)
 
 <br/>
 
@@ -42,18 +43,17 @@ One of the features of this app is letting users create an account. I will still
 
 [Top](#table-of-contents)
 
-## Database Design
+## Database Design (working on)
 ![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/DatabaseDiagram.JPG)
 
 <br/>
-
-One of the bigger issues I face in creating this app is the way in which the scales and chords are displayed. Once I can figure that out the ERD will change almost entirely. More information [here](#challenges)
+This is the database diagram. It displays the different kinds of tables I will have and their relations. I will add an updated entity relationship diagram in the future.
 
 [Top](#table-of-contents)
 
 ## Wireframe Details
 ### Front Page
-![Home Page](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/Documentation/FrontPage.JPG)
+![Home Page](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/Home%20Page%20Quick%20Scale.jpeg)
 The home page will be the most basic page on this web application. The first option the users can pick is the chord and scale viewer and
 is explained below. The second option is to play a game meant to help guitarist memorize scales or fretboard notes. The user may also 
 decide to visit his account. I have not yet decided that color scheme for the web app but I know I want to use softer colors and also
@@ -62,7 +62,7 @@ give the user the option to change up some colors.
 [Top](#table-of-contents)
 
 ### Scales and Chords Page
-![Scales Page]()
+![Scales Page](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/ABluesScale.jpeg)
 There is a lot going on in this sketch! I will explain each element but first want to clarify that the users of this app will have
 almost total control into how they want this page to be displayed. First, I want each element of this page to be its own seperate 
 window that users can move around to their liking. They will be able to open, close, and resize these windows as they please. I also want users to be able to change colors if they prefer. I prefer softer lighter colors, some may like harsher and darker colors. I may even have an option to change the fretboard desgin to a more traditional and realistic model. Now I will explain the sperate elements
@@ -92,7 +92,7 @@ shown below (or maybe both).
 Below is what I have been able to accomplish on Visual Studios on the front end.
 ### Front Page
 
-![Front Page](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/Sources/FrontPage.JPG)
+![Front Page](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/Documentation/FrontPage.JPG)
 I have stated that I want the front page to be a very simple and easy to navigate page. There is still more work to be done 
 in terms of choosing font size, color, and what to do with the blurb in the middle of the page.
 
