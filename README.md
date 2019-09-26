@@ -96,12 +96,17 @@ Below is what I have been able to accomplish on Visual Studios on the front end.
 I have stated that I want the front page to be a very simple and easy to navigate page. There is still more work to be done 
 in terms of choosing font size, color, and what to do with the blurb in the middle of the page.
 
-### Scales and Chords Page
 
-### Scales and Chords Page.
+
+### Scales and Chords Page
 Gif Below
 ![Gif](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/Documentation/UsingApp.gif)
 The Scales and Chords page still needs a lot of work but I was able to implement on of the features I really wanted. That is the ability for the page to be customizable to the user. 
+
+### Database Migration
+I have also been able to migrate my database using a code first approach. Below is a Gif demonstrating me entering a specific scale I want to view and the database updating accordingly. 
+![GifHTTP](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/HTTPPost.gif)
+In the future I have to make sure that if a specific scale has already been added to that database that it is not duplicated. 
 
 ### Challenges
 The biggest challenge I face in completing this app is figuring out a way to display a fretboard that can be changed by the user depeding what what scale they want to see and how many strings and frets they want to view. My idea right now is to have a table that that is shaped like a fretboard that will have the strings as columns and frets as rows. This table will change in size depending on what the user chooses. Certain cells will change color depending on the the root note and the mode of the scale. 
