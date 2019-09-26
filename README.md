@@ -108,7 +108,7 @@ The source code to how I implemented this can be found [here](https://github.com
 ### Database Migration
 I have also been able to migrate my database using a code first approach. Below is a Gif demonstrating me entering a specific scale I want to view and the database updating accordingly. 
 ![GifHTTP](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/HTTPPost.gif)
-The source code to how I implemented this can be found [here]https://github.com/jpolanco94/QuickScale_MSSA_Project/tree/master/Prototype/Code_First_Approach/QuickScale
+The source code to how I implemented this can be found [here](https://github.com/jpolanco94/QuickScale_MSSA_Project/tree/master/Prototype/Code_First_Approach/QuickScale)
 In the future I have to make sure that if a specific scale has already been added to that database that it is not duplicated. 
 
 ### Challenges
