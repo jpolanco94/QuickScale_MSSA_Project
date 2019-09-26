@@ -1,7 +1,7 @@
 # QuickScale :guitar:
 ## Table of Contents
 * [Concept and Top Level User Requirements](#concept-and-top-level-user-requirements)
-* [Requirements](#requirements) (Currently Working On)
+* [Requirements](#requirements)
 * [Use Case Diagram](#use-case-diagram)
 * [Database Design](#database-design)
 * [Wireframe Details](#wireframe-details)
@@ -15,7 +15,7 @@ QuickScale is a web application that serves as an easily accessible, readable, a
 * The web app should let users be able to select what scales and chords that want to view.
 * The web app should be easy to navigate.
 * The web app should allow for some level of customizazation.
-One of the bigger issues I face in creating this app is the way in which the scales and chords are displayed. Once I can figure that out the ERD will change almost entirely. More information [here](#challenges)
+The biggest challenge I face at the moment is how I will create an animated fretboard that is also adjustable by the user and also accurate.
 
 <br/>
 
@@ -25,7 +25,7 @@ One of the bigger issues I face in creating this app is the way in which the sca
 
 [Top](#table-of-contents)
 
-## Requirements (Currently working on)
+## Requirements
 ![Requirements](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/RequirementsTable20190925.jpg)
 Above is my requirements table. This table is very basic and missing many requirements that I will add on in the future but it has hleped me better understand the test driven development apporach to creating applications. 
 
@@ -43,7 +43,7 @@ One of the features of this app is letting users create an account. I will still
 
 [Top](#table-of-contents)
 
-## Database Design (working on)
+## Database Design
 ![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/DatabaseDiagram.JPG)
 
 <br/>
@@ -102,10 +102,13 @@ in terms of choosing font size, color, and what to do with the blurb in the midd
 Gif Below
 ![Gif](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/Documentation/UsingApp.gif)
 The Scales and Chords page still needs a lot of work but I was able to implement on of the features I really wanted. That is the ability for the page to be customizable to the user. 
+The source code to how I implemented this can be found [here](https://github.com/jpolanco94/QuickScale_MSSA_Project/tree/master/Prototype/First_Prototype)
+
 
 ### Database Migration
 I have also been able to migrate my database using a code first approach. Below is a Gif demonstrating me entering a specific scale I want to view and the database updating accordingly. 
 ![GifHTTP](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/HTTPPost.gif)
+The source code to how I implemented this can be found [here]https://github.com/jpolanco94/QuickScale_MSSA_Project/tree/master/Prototype/Code_First_Approach/QuickScale
 In the future I have to make sure that if a specific scale has already been added to that database that it is not duplicated. 
 
 ### Challenges
