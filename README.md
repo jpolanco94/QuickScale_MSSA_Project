@@ -6,7 +6,7 @@
 * [Database Design](#database-design)
 * [Wireframe Details](#wireframe-details)
 * [Progress and Challenges](#progress-and-challenges)
-* [Code](#code)
+
 
 
 ## Concept and Top Level User Requirements
@@ -15,6 +15,7 @@ QuickScale is a web application that serves as an easily accessible, readable, a
 * The web app should let users be able to select what scales and chords that want to view.
 * The web app should be easy to navigate.
 * The web app should allow for some level of customizazation.
+One of the bigger issues I face in creating this app is the way in which the scales and chords are displayed. Once I can figure that out the ERD will change almost entirely. More information [here](#challenges)
 
 <br/>
 
@@ -25,29 +26,34 @@ QuickScale is a web application that serves as an easily accessible, readable, a
 [Top](#table-of-contents)
 
 ## Requirements (Currently working on)
-![RTM](https://github.com/jpolanco94/QuickScale/blob/master/Sources/RequirementsTable20190925.jpg)
-Above is my requirements table. This table is very basic and missing many requirements that I will add on in the future but it has hleped me better understand the test driven development apporach to creating applications. In the future I will add a test cases table and finally a requirements traceability matrix.
+![Requirements](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/RequirementsTable20190925.jpg)
+Above is my requirements table. This table is very basic and missing many requirements that I will add on in the future but it has hleped me better understand the test driven development apporach to creating applications. 
+
+![TestCases](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/TestCase20190925.jpg)
+This test case diagram shows at least one test being created for everyone of my requirements. The tests all have the steps necessary to complete them and their expected outcomes.
+
+![RTM](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/RTM_20190926.jpg)
+This requirements traceability matrix provides a better visual representation of what test cases fulfill which requirements. For larger web applications I will need to create a legend to help those who are looking at the RTM better understand what is going on.
 
 [Top](#table-of-contents)
 
 ## Use Case Diagram
-![UseCase](https://github.com/jpolanco94/QuickScale/blob/master/Sources/UseCase.jpeg)
+![UseCase](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/UseCase.jpeg)
 One of the features of this app is letting users create an account. I will still like users without an account to have full access to the app. This is why there are three users in this use case diagram. The only features a user with an account will have is a way to track which scales they viewed last and which scales are viewed often. The administrator will have access to a database that contains all users' login information.
 
 [Top](#table-of-contents)
 
-## Database Design
-![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Sources/DatabaseDiagram.JPG)
+## Database Design (working on)
+![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/DatabaseDiagram.JPG)
 
 <br/>
-
-One of the bigger issues I face in creating this app is the way in which the scales and chords are displayed. Once I can figure that out the ERD will change almost entirely. More information [here](#challenges)
+This is the database diagram. It displays the different kinds of tables I will have and their relations. I will add an updated entity relationship diagram in the future.
 
 [Top](#table-of-contents)
 
 ## Wireframe Details
 ### Front Page
-![Home Page](https://github.com/jpolanco94/QuickScale/blob/master/Sources/Home%20Page%20Quick%20Scale.jpeg)
+![Home Page](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/Home%20Page%20Quick%20Scale.jpeg)
 The home page will be the most basic page on this web application. The first option the users can pick is the chord and scale viewer and
 is explained below. The second option is to play a game meant to help guitarist memorize scales or fretboard notes. The user may also 
 decide to visit his account. I have not yet decided that color scheme for the web app but I know I want to use softer colors and also
@@ -56,7 +62,7 @@ give the user the option to change up some colors.
 [Top](#table-of-contents)
 
 ### Scales and Chords Page
-![Scales Page](https://github.com/jpolanco94/QuickScale/blob/master/Sources/ABluesScale.jpeg)
+![Scales Page](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/ABluesScale.jpeg)
 There is a lot going on in this sketch! I will explain each element but first want to clarify that the users of this app will have
 almost total control into how they want this page to be displayed. First, I want each element of this page to be its own seperate 
 window that users can move around to their liking. They will be able to open, close, and resize these windows as they please. I also want users to be able to change colors if they prefer. I prefer softer lighter colors, some may like harsher and darker colors. I may even have an option to change the fretboard desgin to a more traditional and realistic model. Now I will explain the sperate elements
@@ -86,7 +92,7 @@ shown below (or maybe both).
 Below is what I have been able to accomplish on Visual Studios on the front end.
 ### Front Page
 
-![Front Page](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/Sources/FrontPage.JPG)
+![Front Page](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/Documentation/FrontPage.JPG)
 I have stated that I want the front page to be a very simple and easy to navigate page. There is still more work to be done 
 in terms of choosing font size, color, and what to do with the blurb in the middle of the page.
 
@@ -94,283 +100,10 @@ in terms of choosing font size, color, and what to do with the blurb in the midd
 
 ### Scales and Chords Page.
 Gif Below
-![Gif](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/Sources/UsingApp.gif)
+![Gif](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/Documentation/UsingApp.gif)
 The Scales and Chords page still needs a lot of work but I was able to implement on of the features I really wanted. That is the ability for the page to be customizable to the user. 
 
 ### Challenges
 The biggest challenge I face in completing this app is figuring out a way to display a fretboard that can be changed by the user depeding what what scale they want to see and how many strings and frets they want to view. My idea right now is to have a table that that is shaped like a fretboard that will have the strings as columns and frets as rows. This table will change in size depending on what the user chooses. Certain cells will change color depending on the the root note and the mode of the scale. 
 
 [Top](#table-of-contents)
-
-## Code
-### SQL
-```sql
-USE QuickScale
--------------------------------------------------------------------------
-DROP TABLE IF EXISTS Users
-CREATE TABLE Users(
-	 userID       INT         NOT NULL
-	,username     VARCHAR(15) NOT NULL
-	,userPassword VARCHAR(30) NOT NULL
-	,email        VARCHAR(30) NOT NULL
-	,PRIMARY KEY (userID)
-	)
--------------------------------------------------------------------------
-DROP TABLE IF EXISTS Scales
-CREATE TABLE Scales(
-	 scaleID INT NOT NULL
-	,scaleKey VARCHAR(5) NOT NULL
-	,scaleMode VARCHAR(5) NOT NULL
-	,PRIMARY KEY (scaleID)
-	)
--------------------------------------------------------------------------
-DROP TABLE IF EXISTS SavedFretBoard
-CREATE TABLE SavedFretBoard(
-	 fretboardID       INT        NOT NULL
-	,numberOfFrets     INT        NOT NULL
-	,numberOfStrings   INT        NOT NULL
-	,firstStringNote   VARCHAR(5) NOT NULL
-	,secondStringNote  VARCHAR(5) NOT NULL
-	,thirdStringNote   VARCHAR(5) NOT NULL
-	,fourthStringNote  VARCHAR(5) NOT NULL
-	,fifthStringNote   VARCHAR(5) NULL
-	,sixthStringNote   VARCHAR(5) NULL
-	,seventhStringNote VARCHAR(5) NULL
-	,eightStringNote   VARCHAR(5) NULL
-	,userID			   INT        NOT NULL
-	,scaleID           INT        NOT NULL
-	,FOREIGN KEY (userID) REFERENCES Users(userID)
-	,FOREIGN KEY (scaleID)REFERENCES Scales(scaleID)
-	)
-```
-
-[Top](#table-of-contents)
-
-### HTML
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="~/css/ScalesPage.css"/>
-    <script src="~/js/ScalesPage.js"></script>
-    <title>Scale Page</title>
-</head>
-<body>
-    <div id="drag-1" class="draggable">
-        <div style="display:table-row">Choose Mode and Key</div>
-        <div style="display:table-cell" class="dropdown">
-            <button class="dropbtn">Key</button>
-            <div class="dropdown-content">
-                <a href="#">A</a>
-                <a href="#">A#/Bb</a>
-                <a href="#">B </a>
-                <a href="#">C</a>
-                <a href="#">C#/Db</a>
-                <a href="#">D</a>
-                <a href="#">D#/Eb</a>
-                <a href="#">E</a>
-                <a href="#">F</a>
-                <a href="#">F#/Gb</a>
-                <a href="#">G</a>
-                <a href="#">G#/Ab</a>
-            </div>
-        </div>
-        <div style="display:table-cell" class="dropdown">
-            <button class="dropbtn">Mode</button>
-            <div class="dropdown-content">
-                <a href="#">Major</a>
-                <a href="#">Natural Minor</a>
-                <a href="#">Harmonic Minor</a>
-                <a href="#">Blues</a>
-                <a href="#">Phrygian</a>
-                <a href="#">Mixolydian</a>
-                <a href="#">Lydian</a>
-                <a href="#">Aeolian</a>
-                <a href="#">Locrian</a>
-                <a href="#">Ionian</a>
-                <a href="#">Dorian</a>
-            </div>
-        </div>
-        <button type="button" class="gobutton">Go!</button>
-    </div>
-    <div id="drag-1" class="draggable">
-        <div style="display:table-row">Choose Fret and String Number</div>
-        <div style="display:table-cell" class="dropdown">
-            <button class="dropbtn">String #</button>
-            <div class="dropdown-content">
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-            </div>
-        </div>
-        <div style="display:table-cell" class="dropdown">
-            <button class="dropbtn">Fret#</button>
-            <div class="dropdown-content">
-                <a href="#">12</a>
-                <a href="#">13</a>
-                <a href="#">14</a>
-                <a href="#">15</a>
-                <a href="#">16</a>
-                <a href="#">17</a>
-                <a href="#">18</a>
-                <a href="#">19</a>
-                <a href="#">20</a>
-                <a href="#">21</a>
-                <a href="#">22</a>
-                <a href="#">23</a>
-                <a href="#">24</a>
-
-            </div>
-        </div>
-        <button type="button" class="gobutton">Go!</button>
-    </div>
-    <a asp-action="Index">Front Page</a>
-</body>
-</html>
-```
-
-[Top](#table-of-contents)
-
-### CSS
-```css
-#drag-1, #drag-2 {
-    width: 200px;
-    background-color: #29e;
-    color: indianred;
-    border-radius: 10px;
-    padding: 1%;
-    touch-action: none;
-    user-select: none;
-    -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
-    background-color: aquamarine;
-    margin: 50px;
-}
-.gobutton {
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border: none;
-}
-.gobutton:hover{
-    cursor:  alias;
-    color: yellowgreen;
-}
-.dropbtn {
-    background-color: indianred;
-    color:aquamarine;
-    padding: 8px;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: lightgrey;
-    min-width: 15px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-   color: black;
-   padding: 12px 16px;
-   text-decoration: none;
-   display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: darkgrey;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: gold;
-}
-```
-[Top](#table-of-contents)
-
-### JavaScript
-```javascript
-// target elements with the "draggable" class
-interact('.draggable')
-    .draggable({
-        // enable inertial throwing
-        inertia: true,
-        // keep the element within the area of it's parent
-        modifiers: [
-            interact.modifiers.restrictRect({
-                restriction: 'parent',
-                endOnly: true
-            })
-        ],
-        // enable autoScroll
-        autoScroll: true,
-
-        // call this function on every dragmove event
-        onmove: dragMoveListener,
-        // call this function on every dragend event
-        onend: function (event) {
-            var textEl = event.target.querySelector('p')
-
-            //textEl && (textEl.textContent =
-            //    'moved a distance of ' +
-            //    (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
-            //        Math.pow(event.pageY - event.y0, 2) | 0))
-            //        .toFixed(2) + 'px')
-        }
-    })
-
-function dragMoveListener(event) {
-    var target = event.target
-    // keep the dragged position in the data-x/data-y attributes
-    var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
-    var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
-
-    // translate the element
-    target.style.webkitTransform =
-        target.style.transform =
-        'translate(' + x + 'px, ' + y + 'px)'
-
-    // update the posiion attributes
-    target.setAttribute('data-x', x)
-    target.setAttribute('data-y', y)
-}
-
-// this is used later in the resizing and gesture demos
-window.dragMoveListener = dragMoveListener
-
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-```
-
-[Top](#table-of-contents)
-
-
-
-
-
-
-
-
-
