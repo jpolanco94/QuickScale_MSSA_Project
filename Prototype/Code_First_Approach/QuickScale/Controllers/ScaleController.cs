@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using QuickScale.Models;
+
 
 namespace QuickScale.Controllers
 {
     public class ScaleController : Controller
     {
+        //private IEnumerable<Scale> scales;
         private QuickScaleDBContext _context;
         //public ScaleController(QuickScaleDBContext context)
         //{
@@ -26,8 +29,10 @@ namespace QuickScale.Controllers
         [HttpPost]
         public ViewResult Add(Scale scale)
         {
+            //scales.FirstOrDefault(s => s.Mode == )
             _context.Scales.Add(scale);
             _context.SaveChanges();
+            
             return View();
         }
     }
