@@ -6,6 +6,7 @@
 * [Database Design](#database-design)
 * [Wireframe Details](#wireframe-details)
 * [Progress and Challenges](#progress-and-challenges)
+
 This readme focuses more on my application's documentation and only briefly touches on the code behind it. For a more detailed readme on the source code [click here](https://github.com/jpolanco94/QuickScale_MSSA_Project/tree/master/Prototype) 
 
 ## Concept and Top Level User Requirements
