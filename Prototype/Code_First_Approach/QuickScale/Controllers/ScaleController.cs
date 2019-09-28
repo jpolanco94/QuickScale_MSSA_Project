@@ -11,12 +11,7 @@ namespace QuickScale.Controllers
 {
     public class ScaleController : Controller
     {
-        //private IEnumerable<Scale> scales;
         private QuickScaleDBContext _context;
-        //public ScaleController(QuickScaleDBContext context)
-        //{
-        //    _context = context;
-        //}
         private IScaleRepository repository;
         public ScaleController(IScaleRepository repo, QuickScaleDBContext context)
         {
@@ -29,10 +24,8 @@ namespace QuickScale.Controllers
         [HttpPost]
         public ViewResult Add(Scale scale)
         {
-            //scales.FirstOrDefault(s => s.Mode == )
             _context.Scales.Add(scale);
             _context.SaveChanges();
-            
             return View();
         }
     }

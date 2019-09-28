@@ -1,0 +1,28 @@
+﻿@model QuickScale.Models.User
+
+<!DOCTYPE html>
+
+<html>
+<body>
+    <div>
+        <form asp-action="CreateAccount" method="post">
+            <div>
+                <label asp-for="Username">Enter Username</label>
+                <input asp-for="Username" />
+            </div>
+            <div>
+                <label asp-for="Password">Enter Password</label>
+                <input asp-for="Password" />
+            </div>
+            <div>
+                <label asp-for="Email">Enter Email</label>
+                <input asp-for="Email" />
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+    <a class="btn btn-primary" asp-action="Index" asp-controller="Home">Go back</a>
+</body>
+</html>
+
+
