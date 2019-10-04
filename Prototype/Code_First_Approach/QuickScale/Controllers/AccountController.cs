@@ -17,17 +17,21 @@ namespace QuickScale.Controllers
             repository = repo;
             _context = context;
         }
-        public ViewResult ListAccounts() => View(repository.Users);
         [HttpGet]
         public ViewResult CreateAccount() => View();
         [HttpPost]
         public ViewResult CreateAccount(User users)
         {
-            string password = users.Password;
-            users.Password = Encryption.CreateMD5(password);
-            _context.Users.Add(users);
-            _context.SaveChanges();
-            return View();
+            try
+            {
+                _context.Users.Add(users);
+                _context.SaveChanges();
+                return View();
+            }
+            catch (Exception)
+            {
+                return View();
+            }
         }
 
     }

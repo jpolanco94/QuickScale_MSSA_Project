@@ -18,6 +18,18 @@
     {
       "library": "interactjs@1.6.2",
       "destination": "wwwroot/lib/interactjs/"
+    },
+    {
+      "library": "jquery@3.4.1",
+      "destination": "wwwroot/jquery/"
+    },
+    {
+      "library": "jquery-validation@1.19.1",
+      "destination": "wwwroot/jquery-validation/"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.11",
+      "destination": "wwwroot/jquery-validation-unobtrusive/"
     }
   ]
 }

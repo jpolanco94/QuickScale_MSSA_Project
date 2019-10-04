@@ -11,7 +11,9 @@ namespace QuickScale.Models
     {
         [Key]
         public int ScaleID { get; set; }
+        [MaxLength(10)]
         public string RootNote { get; set; }
+        [MaxLength(15)]
         public string Mode { get; set; }
     }
 }

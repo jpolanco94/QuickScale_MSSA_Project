@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using QuickScale.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace QuickScale
 {
@@ -24,6 +25,14 @@ namespace QuickScale
         {
             services.AddDbContext<QuickScaleDBContext>(options => options.UseSqlServer(
                 Configuration["Data:QuickScale:ConnectionString"]));
+
+            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(
+                Configuration["Data:QuickScaleIdentity:ConnectionString"]));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>()
+                .AddDefaultTokenProviders();
+
             services.AddTransient<IUserRepository, EFUserRepository>();
             services.AddTransient<ISavedFretboardRepository, EFSavedFretboardRepository>();
             services.AddTransient<IScaleRepository, EFScaleRepository>();
@@ -39,6 +48,7 @@ namespace QuickScale
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();
+            app.UseAuthentication();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -46,6 +56,7 @@ namespace QuickScale
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
             SeedData.EnsurePopulated(app);
+            IdentitySeedData.EnsurePopulated(app);
         }
     }
 }

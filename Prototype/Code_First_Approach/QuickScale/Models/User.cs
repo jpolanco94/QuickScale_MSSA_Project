@@ -12,6 +12,7 @@ namespace QuickScale.Models
     {
         [Key]
         public int UserID { get; set; }
+        [MaxLength(15)]
         public string Username {get;set;}
         public string Password { get; set; }
         public string Email { get; set; }

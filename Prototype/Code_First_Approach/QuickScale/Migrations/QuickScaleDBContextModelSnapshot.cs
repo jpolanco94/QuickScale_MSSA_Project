@@ -68,9 +68,11 @@ namespace QuickScale.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Mode");
+                    b.Property<string>("Mode")
+                        .HasMaxLength(15);
 
-                    b.Property<string>("RootNote");
+                    b.Property<string>("RootNote")
+                        .HasMaxLength(10);
 
                     b.HasKey("ScaleID");
 

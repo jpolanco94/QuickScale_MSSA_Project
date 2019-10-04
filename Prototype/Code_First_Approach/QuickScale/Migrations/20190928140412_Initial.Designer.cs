@@ -10,8 +10,8 @@ using QuickScale.Models;
 namespace QuickScale.Migrations
 {
     [DbContext(typeof(QuickScaleDBContext))]
-    [Migration("20190924154204_Intial")]
-    partial class Intial
+    [Migration("20190928140412_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -70,9 +70,11 @@ namespace QuickScale.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Mode");
+                    b.Property<string>("Mode")
+                        .HasMaxLength(15);
 
-                    b.Property<string>("RootNote");
+                    b.Property<string>("RootNote")
+                        .HasMaxLength(10);
 
                     b.HasKey("ScaleID");
 

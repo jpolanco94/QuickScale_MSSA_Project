@@ -15,8 +15,7 @@ namespace QuickScale.Models
             {
                 byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
                 byte[] hashBytes = md5.ComputeHash(inputBytes);
-
-                // Convert the byte array to hexadecimal string
+                
                 StringBuilder sb = new StringBuilder();
                 for (int i = 0; i < hashBytes.Length; i++)
                 {

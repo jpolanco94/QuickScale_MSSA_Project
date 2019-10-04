@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace QuickScale.Migrations
 {
-    public partial class Intial : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,8 +13,8 @@ namespace QuickScale.Migrations
                 {
                     ScaleID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    RootNote = table.Column<string>(nullable: true),
-                    Mode = table.Column<string>(nullable: true)
+                    RootNote = table.Column<string>(maxLength: 10, nullable: true),
+                    Mode = table.Column<string>(maxLength: 15, nullable: true)
                 },
                 constraints: table =>
                 {

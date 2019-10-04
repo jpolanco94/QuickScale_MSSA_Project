@@ -8,5 +8,7 @@ namespace QuickScale.Models
     public interface IUserRepository
     {
         IQueryable<User> Users { get; }
+
+        User DeleteUser(int userID);
     }
 }
