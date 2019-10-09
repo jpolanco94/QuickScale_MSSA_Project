@@ -38,7 +38,7 @@ This requirements traceability matrix provides a better visual representation of
 [Top](#table-of-contents)
 
 ## Use Case Diagram
-![UseCase](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/UseCase.jpeg)
+![UseCase](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/UseCase2.jpeg)
 One of the features of this app is letting users create an account. I will still like users without an account to have full access to the app. This is why there are three users in this use case diagram. The only features a user with an account will have is a way to track which scales they viewed last and which scales are viewed often. The administrator will have access to a database that contains all users' login information.
 
 [Top](#table-of-contents)
