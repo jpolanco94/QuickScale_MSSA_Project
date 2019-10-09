@@ -5,6 +5,25 @@
     {
       "library": "bootstrap@4.3.1",
       "destination": "wwwroot/lib"
+    },
+    {
+      "library": "w3@2.0.1",
+      "destination": "wwwroot/w3/"
+    },
+    {
+      "library": "font-awesome@4.7.0",
+      "destination": "wwwroot/font-awesome/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "sass.js@0.11.0",
+      "destination": "wwwroot/sass.js/"
     }
-  ]
+  ,
+{
+  "provider": "cdnjs",
+  "library": "jquery@3.2.1",
+  "destination": "wwwroot/jquery/"
+}
+]
 }

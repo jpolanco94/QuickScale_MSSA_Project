@@ -1,9 +1,25 @@
-﻿<h1>HomePage</h1>
+﻿<!DOCTYPE html>
 
-<div>
-    <a class="btn btn-primary" asp-action="ScalesPage" asp-controller="Scales">View Scales</a>
-    <a class="btn btn-primary" asp-action="Index" asp-controller="Home">Accounts Page</a>
-    <a class="btn btn-primary" asp-action="Create" asp-controller="Admin">Create an Account</a>
-    <a class="btn btn-primary" asp-action="Login" asp-controller="Account">Login</a>
-</div>
+<h1>Quick Scale</h1>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="~/css/FrontPage.css" />
+    <link rel="stylesheet" href="~/font-awesome/css/font-awesome.min.css" />  
+    <link rel="stylesheet" href="~/css/HomePageNavBar.css" />
+ </head>
+ <body>
+     <div class="navbar">
+         <a class="active" asp-action="Index" asp-controller="Scale"><i class="fa fa-fw fa-music"></i>View Scales</a>
+         <a class="active" asp-action="Index" asp-controller="Home"><i class="fa fa-fw fa-address-card"></i>Accounts Page</a>
+         <a class="active" asp-action="Create" asp-controller="Admin"><i class="fa fa-fw fa-bell"></i>Create An Account</a>
+         <a class="active" asp-action="Login" asp-controller="Accounts"><i class="fa fa-fw fa-anchor"></i>Login</a>
+     </div>
+</body>
+
+</html>
+
+
+
 

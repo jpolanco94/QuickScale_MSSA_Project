@@ -1,0 +1,246 @@
+﻿html, body {
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    background-color: #111;
+    color: #fff;
+}
+
+    html p, body p {
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    html button, body button {
+        border-radius: 3px;
+        border: 0px;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        background-color: #666;
+        color: #fff;
+    }
+
+    html select, body select {
+        border: 0px;
+        border-radius: 3px;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+
+        html select.open, body select.open {
+            padding: 2px 0px;
+        }
+
+        html select .note, body select .note {
+            background-color: #fff;
+        }
+
+.fretBoard {
+    width: 420px;
+    display: inline-block;
+    float: left;
+    margin: 10px;
+}
+
+.fret, .jumbo {
+    display: flex;
+    flex-direction: row;
+}
+
+.string, .jstring {
+    width: 14.3%;
+    padding: 25px 13px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 10px;
+    background-color: #222;
+    min-height: 60px;
+    background: repeating-linear-gradient(-90deg, #222, #222 40%, #000000 46%, #ffffff 48%, #222 52%, #222);
+}
+
+.string {
+    color: #666;
+}
+
+.fret[rel="0"] .string {
+    min-height: 0px;
+    padding: 10px;
+}
+
+.string.zero, .jstring.zero {
+    border-color: #ccc;
+    background: transparent !important;
+    text-align: right;
+    color: #fff;
+    padding-top: 22px;
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.selected {
+    color: #000;
+}
+
+.noteSelector {
+    display: inline-block;
+    float: left;
+    margin: 10px;
+}
+
+    .noteSelector p {
+        margin-bottom: 10px;
+    }
+
+.note {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    background-color: #222;
+    cursor: pointer;
+}
+
+    .note.selected[rel="A"], .note[rel="A"]:hover {
+        background-color: #ef4337;
+    }
+
+.string.selected[rel="A"] {
+    background: repeating-linear-gradient(-90deg, #ef4337, #ef4337 40%, #000000 46%, #ffffff 48%, #ef4337 52%, #ef4337);
+}
+
+.note.selected[rel="A#"], .note[rel="A#"]:hover {
+    background-color: #e71f62;
+}
+
+.string.selected[rel="A#"] {
+    background: repeating-linear-gradient(-90deg, #e71f62, #e71f62 40%, #000000 46%, #ffffff 48%, #e71f62 52%, #e71f62);
+}
+
+.note.selected[rel="B"], .note[rel="B"]:hover {
+    background-color: #8f3e97;
+}
+
+.string.selected[rel="B"] {
+    background: repeating-linear-gradient(-90deg, #8f3e97, #8f3e97 40%, #000000 46%, #ffffff 48%, #8f3e97 52%, #8f3e97);
+}
+
+.note.selected[rel="C"], .note[rel="C"]:hover {
+    background-color: #65489d;
+}
+
+.string.selected[rel="C"] {
+    background: repeating-linear-gradient(-90deg, #65489d, #65489d 40%, #000000 46%, #ffffff 48%, #65489d 52%, #65489d);
+}
+
+.note.selected[rel="C#"], .note[rel="C#"]:hover {
+    background-color: #4554a4;
+}
+
+.string.selected[rel="C#"] {
+    background: repeating-linear-gradient(-90deg, #4554a4, #4554a4 40%, #000000 46%, #ffffff 48%, #4554a4 52%, #4554a4);
+}
+
+.note.selected[rel="D"], .note[rel="D"]:hover {
+    background-color: #478ecc;
+}
+
+.string.selected[rel="D"] {
+    background: repeating-linear-gradient(-90deg, #478ecc, #478ecc 40%, #000000 46%, #ffffff 48%, #478ecc 52%, #478ecc);
+}
+
+.note.selected[rel="D#"], .note[rel="D#"]:hover {
+    background-color: #02bbd3;
+}
+
+.string.selected[rel="D#"] {
+    background: repeating-linear-gradient(-90deg, #02bbd3, #02bbd3 40%, #000000 46%, #ffffff 48%, #02bbd3 52%, #02bbd3);
+}
+
+.note.selected[rel="E"], .note[rel="E"]:hover {
+    background-color: #009587;
+}
+
+.string.selected[rel="E"] {
+    background: repeating-linear-gradient(-90deg, #009587, #009587 40%, #000000 46%, #ffffff 48%, #009587 52%, #009587);
+}
+
+.note.selected[rel="F"], .note[rel="F"]:hover {
+    background-color: #4bae4d;
+}
+
+.string.selected[rel="F"] {
+    background: repeating-linear-gradient(-90deg, #4bae4d, #4bae4d 40%, #000000 46%, #ffffff 48%, #4bae4d 52%, #4bae4d);
+}
+
+.note.selected[rel="F#"], .note[rel="F#"]:hover {
+    background-color: #8ac247;
+}
+
+.string.selected[rel="F#"] {
+    background: repeating-linear-gradient(-90deg, #8ac247, #8ac247 40%, #000000 46%, #ffffff 48%, #8ac247 52%, #8ac247);
+}
+
+.note.selected[rel="G"], .note[rel="G"]:hover {
+    background-color: #cddc36;
+}
+
+.string.selected[rel="G"] {
+    background: repeating-linear-gradient(-90deg, #cddc36, #cddc36 40%, #000000 46%, #ffffff 48%, #cddc36 52%, #cddc36);
+}
+
+.note.selected[rel="G#"], .note[rel="G#"]:hover {
+    background-color: #fde938;
+}
+
+.string.selected[rel="G#"] {
+    background: repeating-linear-gradient(-90deg, #fde938, #fde938 40%, #000000 46%, #ffffff 48%, #fde938 52%, #fde938);
+}
+
+.mono .string.selected {
+    background: repeating-linear-gradient(-90deg, #02bbd3, #02bbd3 40%, #000000 46%, #ffffff 48%, #02bbd3 52%, #02bbd3);
+}
+
+.noteSelector.mono .selected, .noteSelector.mono .note:hover {
+    background-color: #02bbd3;
+}
+
+.jumbo .jstring {
+    background: repeating-linear-gradient(-90deg, #cccccc, #cccccc 40%, #000000 46%, #ffffff 48%, #cccccc 52%, #cccccc);
+    min-height: 2px;
+    height: 3px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.jumbo.nut .jstring {
+    height: 5px;
+    background: repeating-linear-gradient(-90deg, #FFFCE6, #FFFCE6 40%, #000000 46%, #ffffff 48%, #FFFCE6 52%, #FFFCE6);
+}
+
+.jumbo .jstring.zero {
+    background: #ffffff;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    margin: 21px -10px 17px -10px;
+    background: #fff;
+    border-radius: 20px;
+    display: block;
+    z-index: 2;
+}
+
+.scaleSelector {
+    float: left;
+    display: inline;
+    margin: 10px;
+}
+
+    .scaleSelector .setScale {
+        clear: both;
+        display: block;
+        margin-top: 10px;
+    }
