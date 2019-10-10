@@ -1,5 +1,4 @@
-﻿@model QuickScaleAndIdentity.Models.Scale
-
+﻿@model QuickScaleAndIdentity.Models.SavedFretBoard
 
 <html>
 
@@ -14,10 +13,12 @@
 
 
     <div class="fretBoard">
+        <form asp-action="SaveFretboard" asp-controller="Scale">
+            <button type="submit" class="btn btn-primary">Save Settings</button>
         <div class="fret" rel="0">
             <div class="string zero"></div>
             <div class="string one">
-                <select class="open">
+                <select class="open" asp-for="SixthStringNote">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -33,7 +34,7 @@
                 </select>
             </div>
             <div class="string two">
-                <select class="open" >
+                <select class="open" asp-for="FifthStringNote">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -49,7 +50,7 @@
                 </select>
             </div>
             <div class="string three">
-                <select class="open">
+                <select class="open" asp-for="FourthStringNote">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -65,7 +66,7 @@
                 </select>
             </div>
             <div class="string four">
-                <select class="open">
+                <select class="open" asp-for="ThirdStringNote">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -81,7 +82,7 @@
                 </select>
             </div>
             <div class="string five">
-                <select class="open">
+                <select class="open" asp-for="SecondStringNote">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -97,7 +98,7 @@
                 </select>
             </div>
             <div class="string six">
-                <select class="open">
+                <select class="open" asp-for="FirstStringNote">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -563,6 +564,7 @@
             <div class="jstring five"></div>
             <div class="jstring six"></div>
         </div>
+        </form>
     </div>
     <div class="noteSelector">
         <p>Note Switches</p>
@@ -585,40 +587,8 @@
             <label for="subscribeNews">Color Code Notes</label>
         </div>
     </div>
-    <div class="scaleSelector">
-        <form asp-action="Add" method="post">
-            <p>Map Scales</p>
-            <p>Root Note</p>
-            <select class="select rootNote" asp-for="RootNote">
-                <option class="note" value="A">A</option>
-                <option class="note" value="A#">A#</option>
-                <option class="note" value="B">B</option>
-                <option class="note" value="C">C</option>
-                <option class="note" value="C#">C#</option>
-                <option class="note" value="D">D</option>
-                <option class="note" value="D#">D#</option>
-                <option class="note" value="E">E</option>
-                <option class="note" value="F">F</option>
-                <option class="note" value="F#">F#</option>
-                <option class="note" value="G">G</option>
-                <option class="note" value="G#">G#</option>
-            </select>
-            <p>Scale</p>
-            <select class="scale" asp-for="Mode">
-                <option class="intervals" value="major">Major</option>
-                <option class="intervals" value="minor">Minor</option>
-                <option class="intervals" value="minorMelDes">Melodic Minor (Desc)</option>
-                <option class="intervals" value="minorMelAsc">Melodic Minor (Asc)</option>
-                <option class="intervals" value="minorHar">Harmonic Minor</option>
-                <option class="intervals" value="whole">Whole</option>
-                <option class="intervals" value="gypsy">Gypsy</option>
-                <option class="intervals" value="pentatonic">Pentatonic</option>
-                <option class="intervals" value="octatonic">Octatonic</option>
-                <option class="intervals" value="blues">Blues</option>
-            </select>
-            <button class="setScale"> Set Scale </button>
-        </form>
-    </div>
+    @*This portion of the html lets users select their scale and also saves that scale to the database*@
+    @Html.Partial("Add")
 
 </body>
 </html>
