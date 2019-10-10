@@ -46,10 +46,13 @@ One of the features of this app is letting users create an account. I will still
 [Top](#table-of-contents)
 
 ## Database Design
-![ERD1](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/DatabaseDiagram.JPG)
+![db1](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/DatabaseDiagram20191010.JPG)
 
 <br/>
-This is the database diagram. It displays the different kinds of tables I will have and their relations. I will add an updated entity relationship diagram in the future.
+This is the database diagram. It displays the different kinds of tables I will have and their relations.
+
+![db2](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/IdentityDbDiagram20191010.JPG)
+This database diagram is what I am using to let users create accounts and login as well as control users and roles with an admin account.
 
 [Top](#table-of-contents)
 
