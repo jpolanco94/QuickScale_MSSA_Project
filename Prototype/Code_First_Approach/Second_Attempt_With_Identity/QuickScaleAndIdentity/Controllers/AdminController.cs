@@ -12,19 +12,15 @@ namespace QuickScaleAndIdentity.Controllers
  
     public class AdminController : Controller
     {
-        private QuickScaleDbContext _context;
-        private IUserRepository repository;
+
         private UserManager<AppUser> userManager;
         private IUserValidator<AppUser> userValidator;
         private IPasswordValidator<AppUser> passwordValidator;
         private IPasswordHasher<AppUser> passwordHasher;
 
         public AdminController(UserManager<AppUser> usrMgr, IUserValidator<AppUser> userValid,
-            IPasswordValidator<AppUser> passwordValid, IPasswordHasher<AppUser> passwordHash,
-            QuickScaleDbContext ctx, IUserRepository repo)
+            IPasswordValidator<AppUser> passwordValid, IPasswordHasher<AppUser> passwordHash)
         {
-            _context = ctx;
-            repository = repo;
             userValidator = userValid;
             passwordValidator = passwordValid;
             passwordHasher = passwordHash;
@@ -36,10 +32,9 @@ namespace QuickScaleAndIdentity.Controllers
         public ViewResult Create() => View();
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateModel model, User users)
+        public async Task<IActionResult> Create(CreateModel model)
         {
-            users.Username = model.Name;
-            users.Email = model.Email;
+            
             if (ModelState.IsValid)
             {
                 AppUser user = new AppUser
@@ -51,8 +46,6 @@ namespace QuickScaleAndIdentity.Controllers
 
                 if (result.Succeeded)
                 {
-                    _context.Users.Add(users);
-                    _context.SaveChanges();
                     return RedirectToAction("HomePage", "Home");
                 }
                 else
@@ -67,17 +60,14 @@ namespace QuickScaleAndIdentity.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(string id, User users)
-        {
+        public async Task<IActionResult> Delete(string id)
+        { 
             AppUser user = await userManager.FindByIdAsync(id);
-            var ouser = new User() { Email = user.Email };
             if (user != null)
             {
                 IdentityResult result = await userManager.DeleteAsync(user);
                 if (result.Succeeded)
                  {
-                    _context.Users.Remove(ouser);
-                    _context.SaveChanges();
                     return RedirectToAction("Index");
                 }
                 else

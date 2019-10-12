@@ -15,6 +15,7 @@ namespace QuickScaleAndIdentity.Models
     {
         public AppIdentityDbContext(DbContextOptions<AppIdentityDbContext> options)
             : base(options) { }
+        public DbSet<SavedFretBoard> SavedFretBoards { get; set; }
 
         public static async Task CreateAdminAccount(IServiceProvider serviceProvider,
         IConfiguration configuration)

@@ -13,12 +13,11 @@
 
 
     <div class="fretBoard">
-        <form asp-action="SaveFretboard" asp-controller="Scale">
             <button type="submit" class="btn btn-primary">Save Settings</button>
         <div class="fret" rel="0">
             <div class="string zero"></div>
             <div class="string one">
-                <select class="open" asp-for="SixthStringNote">
+                <select class="open">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -34,7 +33,7 @@
                 </select>
             </div>
             <div class="string two">
-                <select class="open" asp-for="FifthStringNote">
+                <select class="open">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -50,7 +49,7 @@
                 </select>
             </div>
             <div class="string three">
-                <select class="open" asp-for="FourthStringNote">
+                <select class="open">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -66,7 +65,7 @@
                 </select>
             </div>
             <div class="string four">
-                <select class="open" asp-for="ThirdStringNote">
+                <select class="open">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -82,7 +81,7 @@
                 </select>
             </div>
             <div class="string five">
-                <select class="open" asp-for="SecondStringNote">
+                <select class="open">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -98,7 +97,7 @@
                 </select>
             </div>
             <div class="string six">
-                <select class="open" asp-for="FirstStringNote">
+                <select class="open">
                     <option value="A">A</option>
                     <option value="A#">A#</option>
                     <option value="B">B</option>
@@ -564,7 +563,7 @@
             <div class="jstring five"></div>
             <div class="jstring six"></div>
         </div>
-        </form>
+
     </div>
     <div class="noteSelector">
         <p>Note Switches</p>

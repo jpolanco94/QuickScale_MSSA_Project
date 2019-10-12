@@ -29,17 +29,14 @@ namespace QuickScaleAndIdentity
 
             services.AddTransient<IUserValidator<AppUser>, CustomUserValidator>();
 
-            services.AddDbContext<QuickScaleDbContext>(options =>
-            options.UseSqlServer(
-                Configuration["Data:QuickScaleApp:ConnectionString"]));
-
+           
             services.AddDbContext<AppIdentityDbContext>(options =>
             options.UseSqlServer(
                 Configuration["Data:QuickScaleAccounts:ConnectionString"]));
 
-            services.AddTransient<IUserRepository, EFUserRepository>();
+           
             services.AddTransient<ISavedFretBoardRepository, EFSavedFretBoardRepository>();
-            services.AddTransient<IScaleRepository, EFScaleRepository>();
+  
 
             services.AddIdentity<AppUser, IdentityRole>(opts =>
             {

@@ -7,9 +7,9 @@ namespace QuickScaleAndIdentity.Models
 {
     public class EFSavedFretBoardRepository : ISavedFretBoardRepository
     {
-        private QuickScaleDbContext context;
+        private AppIdentityDbContext context;
 
-        public EFSavedFretBoardRepository(QuickScaleDbContext ctx)
+        public EFSavedFretBoardRepository(AppIdentityDbContext ctx)
         {
             context = ctx;
         }
