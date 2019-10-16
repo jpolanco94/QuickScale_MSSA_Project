@@ -7,7 +7,7 @@
 * [Wireframe Details](#wireframe-details)
 * [Progress and Challenges](#progress-and-challenges)
 
-Checkout my app [here](https://quickscaleandidentity20191010090719.azurewebsites.net/)
+Checkout my app [here](https://quickscale.azurewebsites.net/)
 
 This readme focuses more on my application's documentation and only briefly touches on the code behind it. For a more detailed readme on the source code [click here](https://github.com/jpolanco94/QuickScale_MSSA_Project/tree/master/Prototype) 
 
