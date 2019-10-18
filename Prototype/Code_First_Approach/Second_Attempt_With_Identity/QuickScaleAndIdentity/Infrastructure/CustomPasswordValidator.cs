@@ -21,7 +21,7 @@ namespace QuickScaleAndIdentity.Infrastructure
                 errors.Add(new IdentityError
                 {
                     Code = "PasswordContainsUserName",
-                    Description = "Password cannot containt username"
+                    Description = "Password cannot contain username"
                 });
             }
             if (password.Contains("12345"))

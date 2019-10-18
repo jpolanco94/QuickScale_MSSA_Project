@@ -4,13 +4,26 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using QuickScaleAndIdentity.Models;
 
 namespace QuickScaleAndIdentity.Controllers
 {
     public class HomeController : Controller
     {
-        
-        public IActionResult Index() => View(GetData(nameof(Index)));
+        public ViewResult Index()
+        {
+            int? results = SavedFretBoardViewModel.SavedFretBoards.Where(name => String.Equals(name.Username.ToLower(), User.Identity.Name.ToLower())).Count();
+            if (results == 0)
+            {
+                return View("Other");
+            }
+            else
+            {
+                return View(SavedFretBoardViewModel.SavedFretBoards.Where(
+                    r => r.Username.ToLower() == User.Identity.Name.ToLower()));
+            }
+        }
+        //public IActionResult Index() => View(GetData(nameof(Index)));
 
         public IActionResult HomePage() => View();
 

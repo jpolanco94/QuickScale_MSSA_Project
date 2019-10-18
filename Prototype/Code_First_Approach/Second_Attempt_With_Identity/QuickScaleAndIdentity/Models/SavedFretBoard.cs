@@ -28,5 +28,6 @@ namespace QuickScaleAndIdentity.Models
         [MaxLength(25)]
         public string Mode { get; set; }
         public string Id { get; set; }
+        public string Username { get; set; }
     }
 }

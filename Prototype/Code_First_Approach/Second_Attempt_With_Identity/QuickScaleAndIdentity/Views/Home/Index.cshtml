@@ -1,4 +1,4 @@
-﻿@model Dictionary<string, object>
+﻿@*
 
 <div class="bg-primary m-1 p-1 text-white"><h4>User Details</h4></div>
 
@@ -7,10 +7,49 @@
     {
         <tr><th>@kvp.Key</th><td>@kvp.Value</td></tr>
     }
-</table>
+</table>*@
 
-@if (User?.Identity?.IsAuthenticated ?? false)
+@model IEnumerable<SavedFretBoard>
+<!DOCTYPE html>
+
+<html>
+<body>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Root Note</th>
+            <th>Mode</th>
+            <th>First String Note</th>
+            <th>Second String Note</th>
+            <th>Third String Note</th>
+            <th>Fourth Second String</th>
+            <th>Fifth String Note</th>
+            <th>Sixth String Note</th>
+        </tr>
+    </thead>
+    <tbody> 
+        @foreach(SavedFretBoard p in Model)
+        {
+            
+                <tr>
+                    <td class="text-center">@p.RootNote</td>
+                    <td class="text-center">@p.Mode</td>
+                    <td class="text-center">@p.FirstStringNote</td>
+                    <td class="text-center">@p.SecondStringNote</td>
+                    <td class="text-center">@p.ThirdStringNote</td>
+                    <td class="text-center">@p.FourthStringNote</td>
+                    <td class="text-center">@p.FifthStringNote</td>
+                    <td class="text-center">@p.SixthStringNote</td>
+                </tr>
+            
+
+        }
+    </tbody>
+</table>
+    </body>
+</html>
+@*@if (User?.Identity?.IsAuthenticated ?? true)
 {
     <a asp-controller="Account" asp-action="Logout"
        class="btn btn-danger">Logout</a>
-}
+}*@

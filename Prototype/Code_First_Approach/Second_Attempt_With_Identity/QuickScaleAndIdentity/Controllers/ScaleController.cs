@@ -38,8 +38,10 @@ namespace QuickScaleAndIdentity.Controllers
             try
             {
                 fretboard.Id = userManager.GetUserId(User);
+                fretboard.Username = User.Identity.Name;
                 _context.SavedFretBoards.Add(fretboard);
                 _context.SaveChanges();
+                SavedFretBoardViewModel.AddSettings(fretboard);
                 Thread.Sleep(15000);
                 return View();
             }

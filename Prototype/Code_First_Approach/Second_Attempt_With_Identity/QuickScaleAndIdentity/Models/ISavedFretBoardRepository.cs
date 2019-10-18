@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace QuickScaleAndIdentity.Models
 {
-    public class ISavedFretBoardRepository
+    public interface ISavedFretBoardRepository
     {
         IQueryable<SavedFretBoard> SavedFretBoards { get; }
     }
