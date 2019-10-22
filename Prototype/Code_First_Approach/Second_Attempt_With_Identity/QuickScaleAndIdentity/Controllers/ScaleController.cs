@@ -25,10 +25,12 @@ namespace QuickScaleAndIdentity.Controllers
             repository = repo;
             userManager = userMgr;
         }
-        public IActionResult Index()
+        public ViewResult Index()
         {
             return View();
+
         }
+        public ViewResult Scale2() => View();
 
         public ViewResult SaveScale() => View();
 
@@ -41,7 +43,6 @@ namespace QuickScaleAndIdentity.Controllers
                 fretboard.Username = User.Identity.Name;
                 _context.SavedFretBoards.Add(fretboard);
                 _context.SaveChanges();
-                SavedFretBoardViewModel.AddSettings(fretboard);
                 Thread.Sleep(15000);
                 return View();
             }

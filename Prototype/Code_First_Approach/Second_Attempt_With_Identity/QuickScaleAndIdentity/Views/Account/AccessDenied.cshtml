@@ -1,2 +1,9 @@
 ﻿<div class="bg-danger mb-1 p-2 text-white"><h4>Access Denied</h4></div>
-<a asp-action="Index" asp-controller="Home" class="btn btn-primary">OK</a>
+@if (User.Identity.Name.ToLower() == "admin")
+{
+    <a asp-action="AdminHomePage" asp-controller="Admin" class="btn btn-primary">Ok</a>
+}
+else
+{
+    <a asp-action="HomePage" asp-controller="Home" class="btn btn-primary">OK</a>
+}

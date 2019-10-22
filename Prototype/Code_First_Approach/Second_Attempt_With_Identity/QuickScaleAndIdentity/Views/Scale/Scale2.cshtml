@@ -1,0 +1,610 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/Fretboard2.css" />
+
+    <script src="~/jquery/jquery.min.js"></script>
+    <script src="~/js/Fretboard2.js"></script>
+</head>
+<body>
+<div class="fretBoard">
+    <div class="fret" rel="0">
+        <div class="string zero"></div>
+        <div class="string one">
+            <select class="open">
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+            </select>
+        </div>
+        <div class="string two">
+            <select class="open">
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+            </select>
+        </div>
+        <div class="string three">
+            <select class="open">
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+            </select>
+        </div>
+        <div class="string four">
+            <select class="open">
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+            </select>
+        </div>
+        <div class="string five">
+            <select class="open">
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+            </select>
+        </div>
+        <div class="string six">
+            <select class="open">
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+            </select>
+        </div>
+    </div>
+    <div class="jumbo nut">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="1">
+        <div class="string zero">1</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="2">
+        <div class="string zero">2</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="3">
+
+        <div class="string zero">3</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="4">
+        <div class="string zero">4</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="5">
+        <div class="string zero">5</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="6">
+        <div class="string zero">6</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="7">
+        <div class="string zero">7</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="8">
+        <div class="string zero">8</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="9">
+        <div class="string zero">9</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="10">
+        <div class="string zero">10</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="11">
+        <div class="string zero">11</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="12">
+        <div class="string zero">12</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="13">
+        <div class="string zero">13</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="14">
+        <div class="string zero">14</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="15">
+        <div class="string zero">15</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="16">
+        <div class="string zero">16</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="17">
+        <div class="string zero">17</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="18">
+        <div class="string zero">18</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="19">
+        <div class="string zero">19</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="20">
+        <div class="string zero">20</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="21">
+        <div class="string zero">21</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="22">
+        <div class="string zero">22</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="23">
+        <div class="string zero">23</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+    <div class="fret" rel="24">
+        <div class="string zero">24</div>
+        <div class="string one"></div>
+        <div class="string two"></div>
+
+        <div class="string three"></div>
+        <div class="string four"></div>
+        <div class="string five"></div>
+        <div class="string six"></div>
+    </div>
+    <div class="jumbo">
+        <div class="jstring zero"></div>
+        <div class="jstring one"></div>
+        <div class="jstring two"></div>
+        <div class="jstring three"></div>
+        <div class="jstring four"></div>
+        <div class="jstring five"></div>
+        <div class="jstring six"></div>
+    </div>
+</div>
+<div class="noteSelector">
+    <p>Note Switches</p>
+    <div class="note" rel="A">A</div>
+    <div class="note" rel="A#">A#</div>
+    <div class="note" rel="B">B</div>
+    <div class="note" rel="C">C</div>
+    <div class="note" rel="C#">C#</div>
+    <div class="note" rel="D">D</div>
+    <div class="note" rel="D#">D#</div>
+    <div class="note" rel="E">E</div>
+    <div class="note" rel="F">F</div>
+    <div class="note" rel="F#">F#</div>
+    <div class="note" rel="G">G</div>
+    <div class="note" rel="G#">G#</div>
+    <p>&nbsp;</p>
+    <p>Options</p>
+    <div>
+        <input type="checkbox" class="colorCode" name="colorCode" value="true">
+        <label for="subscribeNews">Color Code Notes</label>
+    </div>
+</div>
+<div class="scaleSelector">
+    <p>Map Scales</p>
+    <p>Root Note</p>
+    <select class="select rootNote">
+        <option class="note" value="A">A</option>
+        <option class="note" value="A#">A#</option>
+        <option class="note" value="B">B</option>
+        <option class="note" value="C">C</option>
+        <option class="note" value="C#">C#</option>
+        <option class="note" value="D">D</option>
+        <option class="note" value="D#">D#</option>
+        <option class="note" value="E">E</option>
+        <option class="note" value="F">F</option>
+        <option class="note" value="F#">F#</option>
+        <option class="note" value="G">G</option>
+        <option class="note" value="G#">G#</option>
+    </select>
+    <p>Scale</p>
+    <select class="scale">
+        <option class="intervals" value="major">Major</option>
+        <option class="intervals" value="minor">Minor</option>
+        <option class="intervals" value="minorMelDes">Melodic Minor (Desc)</option>
+        <option class="intervals" value="minorMelAsc">Melodic Minor (Asc)</option>
+        <option class="intervals" value="minorHar">Harmonic Minor</option>
+        <option class="intervals" value="whole">Whole</option>
+        <option class="intervals" value="gypsy">Gypsy</option>
+        <option class="intervals" value="pentatonic">Pentatonic</option>
+        <option class="intervals" value="octatonic">Octatonic</option>
+        <option class="intervals" value="blues">Blues</option>
+    </select>
+    <button class="setScale"> Set Scale </button>
+</div>
+</body>
+</html>

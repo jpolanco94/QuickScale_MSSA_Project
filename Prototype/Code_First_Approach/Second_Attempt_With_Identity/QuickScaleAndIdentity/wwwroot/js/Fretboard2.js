@@ -2,24 +2,17 @@
 var notes = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"];
 // scales
 var major = [2, 2, 1, 2, 2, 2, 1];
-var naturalMinor = [2, 1, 2, 2, 1, 2, 2];
-var minorPentatonic = [3, 2, 2, 3, 2];
-var blues = [3, 2, 1, 1, 3, 2];
-var majorPentatonic = [2, 2, 3, 2, 3];
-var harmonicMinor = [2, 1, 2, 2, 1, 3, 2];
-var melodicMinor = [2, 1, 2, 2, 2, 2, 1];
-var ionian = [2, 2, 1, 2, 2, 2, 1];
-var dorian = [2, 1, 2, 2, 2, 1, 2];
-var phrygian = [1, 2, 2, 2, 1, 2, 2];
-var lydian = [2, 2, 2, 1, 2, 2, 1];
-var mixolydian = [2, 1, 2, 2, 1, 2, 2];
-var aeolian = [2, 1, 2, 2, 1, 2, 2];
-var locrian = [1, 2, 2, 1, 2, 2, 2];
-var wholeTone = [2, 2, 2, 2, 2, 2];
-var wholeHalfDiminished = [2, 1, 2, 1, 2, 1, 2, 1];
-var halfWholeDiminished = [1, 2, 1, 2, 1, 2, 1, 2];
+var minor = [2, 1, 2, 2, 1, 2, 2];
+var minorMelDes = minor;
+var minorMelAsc = [2, 1, 2, 2, 2, 2, 1];
+var minorHar = [2, 1, 2, 2, 1, 3, 1];
+var whole = [2, 2, 2, 2, 2, 2];
+var gypsy = [2, 1, 3, 1, 1, 3, 1];
+var pentatonic = [2, 3, 2, 2, 3];
+var octatonic = [1, 2, 1, 2, 1, 2, 1, 2, 1];
+var blues = [2, 1, 1, 1, 1, 1, 2, 1, 1, 1];
 
-$(document).ready(function () {
+$(document).ready(function() {
     // initially set to EADGBE for standard guitar tuning
     rootChange($(".string.one"), "E");
     rootChange($(".string.two"), "A");
@@ -29,7 +22,7 @@ $(document).ready(function () {
     rootChange($(".string.six"), "E");
     // listeners
     // individual string open note change function
-    $(".open").change(function () {
+    $(".open").change(function() {
         rootChange(
             $(this).parent(),
             $(this)
@@ -38,12 +31,12 @@ $(document).ready(function () {
         );
     });
     // note switches
-    $(".note").click(function () {
+    $(".note").click(function() {
         $(this).toggleClass("selected");
         resetSelection();
     });
     // set scale button
-    $(".setScale").click(function () {
+    $(".setScale").click(function() {
         var note = $(".rootNote")
             .val()
             .toString();
@@ -56,7 +49,7 @@ $(document).ready(function () {
     $('.fretBoard').addClass("mono");
     $('.noteSelector').addClass("mono");
     // color code change class swap
-    $('.colorCode').change(function () {
+    $('.colorCode').change(function() {
         if (this.checked) {
             $(".mono").removeClass("mono");
         } else {
@@ -80,53 +73,32 @@ function setScale(note, scale) {
         case "major":
             scaleArray = major;
             break;
-        case "naturalMinor":
-            scaleArray = naturalMinor;
+        case "minor":
+            scaleArray = minor;
             break;
-        case "minorPentatonic":
-            scaleArray = minorPentatonic;
+        case "minorMelDes":
+            scaleArray = minor;
+            break;
+        case "minorMelAsc":
+            scaleArray = minorMelAsc;
+            break;
+        case "minorHar":
+            scaleArray = minorHar;
+            break;
+        case "whole":
+            scaleArray = whole;
+            break;
+        case "gypsy":
+            scaleArray = gypsy;
+            break;
+        case "pentatonic":
+            scaleArray = pentatonic;
+            break;
+        case "octatonic":
+            scaleArray = octatonic;
             break;
         case "blues":
             scaleArray = blues;
-            break;
-        case "majorPentatonic":
-            scaleArray = majorPentatonic;
-            break;
-        case "harmonicMinor":
-            scaleArray = harmonicMinor;
-            break;
-        case "melodicMinor":
-            scaleArray = melodicMinor;
-            break;
-        case "ionian":
-            scaleArray = ionian;
-            break;
-        case "dorian":
-            scaleArray = dorian;
-            break;
-        case "phrygian":
-            scaleArray = phrygian;
-            break;
-        case "lydian":
-            scaleArray = lydian;
-            break;
-        case "mixolydian":
-            scaleArray = mixolydian;
-            break;
-        case "aeolian":
-            scaleArray = aeolian;
-            break;
-        case "locrian":
-            scaleArray = locrian;
-            break;
-        case "wholeTone":
-            scaleArray = wholeTone;
-            break;
-        case "wholeHalfDiminished":
-            scaleArray = wholeHalfDiminished;
-            break;
-        case "halfWholeDiminished":
-            scaleArray = halfWholeDiminished;
             break;
         default:
             scaleArray = major;
@@ -144,7 +116,7 @@ function setScale(note, scale) {
 // apply the classes to the selected notes across the fretboard
 function resetSelection() {
     $(".fret .selected").removeClass("selected");
-    $(".noteSelector .note.selected").each(function () {
+    $(".noteSelector .note.selected").each(function() {
         $('.string[rel="' + $(this).attr("rel").toString() + '"]').addClass("selected");
     });
 }

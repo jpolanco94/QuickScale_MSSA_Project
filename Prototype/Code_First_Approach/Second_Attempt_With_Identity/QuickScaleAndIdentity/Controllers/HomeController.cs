@@ -10,16 +10,21 @@ namespace QuickScaleAndIdentity.Controllers
 {
     public class HomeController : Controller
     {
+        private ISavedFretBoardRepository repository;
+        public HomeController(ISavedFretBoardRepository repo)
+        {
+            repository = repo;
+        }
         public ViewResult Index()
         {
-            int? results = SavedFretBoardViewModel.SavedFretBoards.Where(name => String.Equals(name.Username.ToLower(), User.Identity.Name.ToLower())).Count();
+            int? results = repository.SavedFretBoards.Where(name => String.Equals(name.Username.ToLower(), User.Identity.Name.ToLower())).Count();
             if (results == 0)
             {
                 return View("Other");
             }
             else
             {
-                return View(SavedFretBoardViewModel.SavedFretBoards.Where(
+                return View(repository.SavedFretBoards.Where(
                     r => r.Username.ToLower() == User.Identity.Name.ToLower()));
             }
         }
