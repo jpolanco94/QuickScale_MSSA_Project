@@ -68,8 +68,8 @@
 }
 
 .fret[rel="0"] .string {
-    min-height: 15px;
-    padding: 12px;
+    min-height: 51px;
+    padding: 9px;
 }
 
 .string.zero, .jstring.zero {
@@ -217,8 +217,8 @@
 .jumbo .jstring {
     background: repeating-linear-gradient(180deg, #ccc, #ccc 40%, #000 46%, #fff 48%, #ccc 52%, #ccc);
     min-height: 10px;
-    height: 51px;
-    padding: 2px;
+    height: 40px;
+    padding: 1px;
     overflow: hidden;
 }
 
@@ -243,8 +243,8 @@
 
 .scaleSelector {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 100px;
+    bottom: 100px;
     display: inline;
     margin: 10px;
 }

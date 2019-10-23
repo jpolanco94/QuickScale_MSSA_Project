@@ -22,10 +22,10 @@ var halfWholeDiminished = [1, 2, 1, 2, 1, 2, 1, 2];
 $(document).ready(function() {
     // initially set to EADGBE for standard guitar tuning
     rootChange($(".string.one"), "E");
-    rootChange($(".string.two"), "A");
-    rootChange($(".string.three"), "D");
-    rootChange($(".string.four"), "G");
-    rootChange($(".string.five"), "B");
+    rootChange($(".string.two"), "B");
+    rootChange($(".string.three"), "G");
+    rootChange($(".string.four"), "D");
+    rootChange($(".string.five"), "A");
     rootChange($(".string.six"), "E");
     // listeners
     // individual string open note change function
