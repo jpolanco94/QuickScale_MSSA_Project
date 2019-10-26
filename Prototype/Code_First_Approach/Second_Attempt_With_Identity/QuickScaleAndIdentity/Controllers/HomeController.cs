@@ -11,11 +11,12 @@ namespace QuickScaleAndIdentity.Controllers
     public class HomeController : Controller
     {
         private ISavedFretBoardRepository repository;
-        public HomeController(ISavedFretBoardRepository repo)
+        private AppIdentityDbContext context;
+        public HomeController(ISavedFretBoardRepository repo, AppIdentityDbContext ctx)
         {
             repository = repo;
+            context = ctx;
         }
-        [Authorize(Roles= "Users")]
         public ViewResult Index()
         {
             int? results = repository.SavedFretBoards.Where(name => String.Equals(name.Username.ToLower(), User.Identity.Name.ToLower())).Count();
@@ -29,11 +30,24 @@ namespace QuickScaleAndIdentity.Controllers
                     r => r.Username.ToLower() == User.Identity.Name.ToLower()));
             }
         }
+
+        [HttpPost]
+        public ViewResult DeleteScale(SavedFretBoard fretboard)
+        {
+            try 
+            {
+                context.SavedFretBoards.Remove(fretboard);
+                context.SaveChanges();
+                return View();
+            }
+            catch (Exception)
+            {
+                return View();
+            }
+        }
         //public IActionResult Index() => View(GetData(nameof(Index)));
 
-        public IActionResult HomePage() => View();
-
-        
+        public IActionResult HomePage() => View();        
         public IActionResult OtherAction() => View("Index", GetData(nameof(OtherAction)));
 
         private Dictionary<string, object> GetData(string actionName) =>new Dictionary<string, object>

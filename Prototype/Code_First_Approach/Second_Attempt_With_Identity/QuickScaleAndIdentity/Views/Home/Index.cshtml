@@ -25,6 +25,7 @@
             <th>Fourth Second String</th>
             <th>Fifth String Note</th>
             <th>Sixth String Note</th>
+            <th>Options</th>
         </tr>
     </thead>
     <tbody> 
@@ -40,6 +41,10 @@
                     <td class="text-center">@p.FourthStringNote</td>
                     <td class="text-center">@p.FifthStringNote</td>
                     <td class="text-center">@p.SixthStringNote</td>
+                    <td>
+                        <a asp-action="" asp-controller="" class="btn btn-primary">View Scale</a>
+                        <a asp-action="DeleteScale" asp-controller="Home" class="btn btn-primary">Delete Scale</a>
+                    </td>
                 </tr>
             
 
