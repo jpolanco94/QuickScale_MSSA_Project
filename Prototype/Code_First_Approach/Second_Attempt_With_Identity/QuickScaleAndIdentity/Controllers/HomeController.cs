@@ -15,6 +15,7 @@ namespace QuickScaleAndIdentity.Controllers
         {
             repository = repo;
         }
+        [Authorize(Roles= "Users")]
         public ViewResult Index()
         {
             int? results = repository.SavedFretBoards.Where(name => String.Equals(name.Username.ToLower(), User.Identity.Name.ToLower())).Count();
