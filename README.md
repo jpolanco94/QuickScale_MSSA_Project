@@ -106,8 +106,19 @@ in terms of choosing font size, color, and what to do with the blurb in the midd
 ### Scales and Chords Page
 Gif Below
 ![Gif](https://github.com/jpolanco94/QuickScale/blob/master/Prototype/Documentation/UsingApp.gif)
-The Scales and Chords page still needs a lot of work but I was able to implement on of the features I really wanted. That is the ability for the page to be customizable to the user. 
+The Scales and Chords page still needs a lot of work but I was able to implement on of the features I really wanted. That is the ability for the page to be customizable to the user. This is a feature I have decided to hold off on with my current project becuase I want to take care of the more important requirements first
 The source code to how I implemented this can be found [here](https://github.com/jpolanco94/QuickScale_MSSA_Project/tree/master/Prototype/First_Prototype)
+
+I was able to find some code that accomplished almost all of what I need from this app. This code allows users to choose a scale and mode and see that displayed on a fret board.
+
+I did have to make a couple changes however. First I had to add a lot more scales since there were only a few available. The second change I made was to make the fretboard horizontal becuase this is how most guitarist are used to viewing a fretboard. I decided I would give users the option to decide whether they wanted a vertical or horizontal fretboard. There is a lot of front end work to be done but I am focused more on fulfilling my basic requirements.
+![Vertical Scale](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/HorizontalScales.PNG)
+![Horizontal Scale](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/Vertical%20Scales.PNG)
+![Switch Gif](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/ChangeView.gif)
+The original source code for this feature can be found [here](https://codepen.io/XCC/pen/zPjqgr)
+
+### Task At Hand
+[Click here](https://github.com/jpolanco94/QuickScale_MSSA_Project/projects) for more information on my current and completed tasks.
 
 
 ### Database Migration
@@ -117,6 +128,6 @@ The source code to how I implemented this can be found [here](https://github.com
 In the future I have to make sure that if a specific scale has already been added to that database that it is not duplicated. 
 
 ### Challenges
-The biggest challenge I face in completing this app is figuring out a way to display a fretboard that can be changed by the user depeding what what scale they want to see and how many strings and frets they want to view. My idea right now is to have a table that that is shaped like a fretboard that will have the strings as columns and frets as rows. This table will change in size depending on what the user chooses. Certain cells will change color depending on the the root note and the mode of the scale. 
+My previous biggest challenge was actually displaying a fretboard. While I have accomplished that, I still want to find a way to have users decide how many strings and frets they want to view. I feel like a deeper understanding of JavaScript maybe required to finish this task but what I have for now is sufficient. I do plan on further developing my JavaScript skills in the future to help me become a better front end developer.
 
 [Top](#table-of-contents)
