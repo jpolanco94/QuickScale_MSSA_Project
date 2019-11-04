@@ -6,6 +6,7 @@
 * [Database Design](#database-design)
 * [Wireframe Details](#wireframe-details)
 * [Progress and Challenges](#progress-and-challenges)
+* [Solution](#solution)
 
 Checkout my app [here](https://quickscale.azurewebsites.net/)
 
@@ -136,3 +137,19 @@ In the future I have to make sure that if a specific scale has already been adde
 My previous biggest challenge was actually displaying a fretboard. While I have accomplished that, I still want to find a way to have users decide how many strings and frets they want to view. I feel like a deeper understanding of JavaScript maybe required to finish this task but what I have for now is sufficient. I do plan on further developing my JavaScript skills in the future to help me become a better front end developer.
 
 [Top](#table-of-contents)
+
+### Solution
+## Integrated Technologies
+One of the most useful technologies I've integrated was JavaScript. Learning JavaScript was not one of the requirements for this course but I felt that what I wanted to do would be very difficult without JavaScript. I needed JavaScript to implement an adjustable fretboard. I was fortunated enough to find some code that already accomplished a lot of what I needed. This code can be found [here](https://codepen.io/XCC/pen/zPjqgr). I had to make a couple changes to this to better fit my requirements, and there are future changes I will need to make this fretboard more adjustable by the user.
+
+I didn't want to learn JavaScript from the ground up but just by analyzing pre-written JavaScript code and with my understanding of Object-Oriented principles I was able to make my changes. JavaScript is a skill I want to further pursue in order to build future apps that incorporate Google Maps API for JavaScript.
+
+## Paths Explored
+I originally wanted to create this app using Blazor. I felt it would be a great way to get ahead of the curve in terms of new technologies. Blazor would also help be use C# as a scripting language instead of having to learn JavaScript. I decided against this though since there wasn't a lot of information or expertise in Blazor that I could turn to if any issues arose. I am still planning on creating my own Blazor apps but I will do so on my own time with other projects.
+
+## Future Plans
+The biggest challenge I've face with app and the one I'm struggling with is how to implement Azure Key Vaults to hide the secrets that I don't want others to see when pushing my app to GitHub. This is something I still plan to work on for the future.
+
+Another feature I want to implement is having email verification. I was able to do this on a seperate project but I just have to code it into this project without having it break anything. The tutorial I used to learn how to use this can be found [here](https://docs.microsoft.com/en-us/aspnet/identity/overview/features-api/account-confirmation-and-password-recovery-with-aspnet-identity) and my link the code to this can be found [here](https://github.com/jpolanco94/Email-Confirmation-and-Password-Recovery).
+
+Since the code I used to build the fretboard was pre-written, I want to eventually build up the proficieny in JavaScript to write my own code for this from the ground up. 
