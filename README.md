@@ -38,7 +38,9 @@ This test case diagram shows at least one test being created for everyone of my 
 This requirements traceability matrix provides a better visual representation of what test cases fulfill which requirements. For larger web applications I will need to create a legend to help those who are looking at the RTM better understand what is going on.
 
 ![RTM2](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/RTM_Two.png)
-This second requirements traceability matrix displays my progress up to this point.
+This second requirements traceability matrix displays my progress up to this point. Currently 100% of my requirements are covered by test cases and 75% of those requirements have passing test cases. Only one of my test cases has failed so far but there are 4 important requirements which have not had features implemented to even be able to test yet.
+
+Most of the front end features of this app are passing, meaning that from a users perspective it may seem that this is a completed application. 
 
 [Top](#table-of-contents)
 
