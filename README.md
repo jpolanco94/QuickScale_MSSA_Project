@@ -37,6 +37,9 @@ This test case diagram shows at least one test being created for everyone of my 
 ![RTM](https://github.com/jpolanco94/QuickScale/blob/master/Documentation/RTM_20190926.jpg)
 This requirements traceability matrix provides a better visual representation of what test cases fulfill which requirements. For larger web applications I will need to create a legend to help those who are looking at the RTM better understand what is going on.
 
+![RTM2](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/RTM_Two.png)
+This second requirements traceability matrix displays my progress up to this point.
+
 [Top](#table-of-contents)
 
 ## Use Case Diagram
