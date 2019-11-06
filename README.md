@@ -53,8 +53,6 @@ One of the features of this app is letting users create an account. I will still
 
 ## Database Design
 ![db1](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/DatabaseDiagram20191010.JPG)
-
-<br/>
 This is the database diagram. It displays the different kinds of tables I will have and their relations.
 
 ![db2](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/IdentityDbDiagram20191010.JPG)
