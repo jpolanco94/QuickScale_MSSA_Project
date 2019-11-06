@@ -60,6 +60,9 @@ This is the database diagram. It displays the different kinds of tables I will h
 ![db2](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/IdentityDbDiagram20191010.JPG)
 This database diagram is what I am using to let users create accounts and login as well as control users and roles with an admin account.
 
+![final dbd](https://github.com/jpolanco94/QuickScale_MSSA_Project/blob/master/Documentation/Database_Diagram_Two.PNG)
+I finally decided to just implement my own tables into the identity database to keep things simple.
+
 [Top](#table-of-contents)
 
 ## Wireframe Details
