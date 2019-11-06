@@ -18,7 +18,7 @@ QuickScale is a web application that serves as an easily accessible, readable, a
 * The web app should let users be able to select what scales and chords that want to view.
 * The web app should be easy to navigate.
 * The web app should allow for some level of customizazation.
-The biggest challenge I face at the moment is how I will create an animated fretboard that is also adjustable by the user and also accurate.
+
 
 <br/>
 
